@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/shivareddy547/spree_cloudinary.git
-  revision: 4dc8890b0afbc39052c719381535bd6fffa6768d
+  revision: 3fe6a92f6b9c683c8c9ce5152b6930e10b6f2758
   branch: upgrade_ruby
   specs:
     spree_cloudinary (0.0.1.alpha)

@@ -1,11 +1,17 @@
-test:
-  service: Disk
-  root: <%= Rails.root.join("tmp/storage") %>
+#test:
+#  service: Disk
+#  root: <%#= Rails.root.join("tmp/storage") %>
 
-local:
-  service: Disk
-  root: <%= Rails.root.join("storage") %>
-
+#local:
+#  service: Disk
+#  root: <%#= Rails.root.join("storage") %>
+cloudinary:
+  service: Cloudinary
+  cloud_name: lovecart
+  api_key: '429837329638351'
+  api_secret: MKx_1N97Lctgwnc0MwxFs_597BE
+  enhance_image_tag: true
+  static_file_support: false
 # Use rails credentials:edit to set the AWS secrets (as aws:access_key_id|secret_access_key)
 # amazon:
 #   service: S3

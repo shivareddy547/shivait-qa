@@ -1,0 +1,19 @@
+
+development:
+  cloud_name: lovecart
+  api_key: '429837329638351'
+  api_secret: MKx_1N97Lctgwnc0MwxFs_597BE
+  enhance_image_tag: true
+  static_file_support: false
+production:
+  cloud_name: lovecart
+  api_key: '429837329638351'
+  api_secret: MKx_1N97Lctgwnc0MwxFs_597BE
+  enhance_image_tag: true
+  static_file_support: true
+test:
+  cloud_name: lovecart
+  api_key: '429837329638351'
+  api_secret: MKx_1N97Lctgwnc0MwxFs_597BE
+  enhance_image_tag: true
+  static_file_support: false
