@@ -59,3 +59,15 @@ gem 'spree_auth_devise', '~> 4.1'
 gem 'spree_gateway', '~> 3.7'
 # gem 'spree_cloudinary', :path=>"spree_cloudinary"
 gem 'spree_cloudinary', github: 'shivareddy547/spree_cloudinary',branch: 'upgrade_ruby'
+# gem "spree_scaffold", :git => 'git://github.com/sebastyuiop/spree_scaffold.git'
+# gem 'vinsol_spree_themes', github: 'vinsol-spree-contrib/spree_themes', branch: 'master'
+#
+group :development do
+  # gem 'spree_scaffold', path: 'spree_scaffold'
+  gem 'spree_scaffold', github: 'shivareddy547/spree_scaffold'
+end
+
+# gem 'spree_admin_roles_and_access', path: 'spree_admin_roles_and_access'
+
+gem 'spree_admin_roles_and_access', github: 'shivareddy547/spree_admin_roles_and_access'
+
