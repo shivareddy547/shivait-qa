@@ -11,3 +11,5 @@
 
 //= require_tree .
 //= require spree/frontend/spree_cloudinary
+
+//= require spree/frontend/spree_admin_roles_and_access

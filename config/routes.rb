@@ -10,3 +10,13 @@ Rails.application.routes.draw do
   mount Spree::Core::Engine, at: '/'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
+
+Spree::Core::Engine.add_routes do
+  namespace :admin do
+    resources :brands do
+      collection do
+        post :update_positions
+      end
+    end
+  end
+end
