@@ -63,11 +63,11 @@ gem 'spree_cloudinary', github: 'shivareddy547/spree_cloudinary',branch: 'upgrad
 # gem 'vinsol_spree_themes', github: 'vinsol-spree-contrib/spree_themes', branch: 'master'
 #
 group :development do
-  gem 'spree_scaffold', path: 'spree_scaffold'
+  # gem 'spree_scaffold', path: 'spree_scaffold'
   # gem 'spree_scaffold', github: 'shivareddy547/spree_scaffold'
 end
 
-gem 'spree_admin_roles_and_access', path: 'spree_admin_roles_and_access'
+# gem 'spree_admin_roles_and_access', path: 'spree_admin_roles_and_access'
 
 # gem 'spree_admin_roles_and_access', github: 'shivareddy547/spree_admin_roles_and_access'
 
