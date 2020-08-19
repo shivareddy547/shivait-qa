@@ -10,6 +10,9 @@
 # In order to initialize a setting do:
 # config.setting_name = 'new value'
 Spree.config do |config|
+
+  config.admin_interface_logo = 'logo/logo.png'
+  config.logo = 'logo/logo.png'
   # Example:
   # Uncomment to stop tracking inventory levels in the application
   # config.track_inventory_levels = false
@@ -24,6 +27,8 @@ Spree.dependencies do |dependencies|
   # Example:
   # Uncomment to change the default Service handling adding Items to Cart
   # dependencies.cart_add_item_service = 'MyNewAwesomeService'
+  #
+
 end
 
 # Spree::Api::Dependencies.storefront_cart_serializer = 'MyRailsApp::CartSerializer'
