@@ -115,4 +115,13 @@ Rails.application.configure do
   config.assets.paths << Rails.root.join('vendor', 'assets', 'fonts')
   config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
   config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
+
+  config.serve_static_assets = false
+
+  # Don't fallback to assets pipeline if a precompiled asset is missed
+  config.assets.compile = true
+
+  # Generate digests for assets URLs
+  config.assets.digest = true
+
 end
