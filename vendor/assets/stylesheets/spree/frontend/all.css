@@ -5,8 +5,22 @@
  *
  *= require spree/frontend
 
+
+
  *= require_self
- *= require_tree .
+
+ *= require spree/frontend/new_design/bootstrap.min
+ *= require spree/frontend/new_design/owl.carousel.min
+ *= require spree/frontend/new_design/slicknav
+ *= require spree/frontend/new_design/flaticon
+ *= require spree/frontend/new_design/gijgo
+ *= require spree/frontend/new_design/animate.min
+ *= require spree/frontend/new_design/magnific-popup
+ *= require spree/frontend/new_design/fontawesome-all.min
+ *= require spree/frontend/new_design/themify-icons
+ *= require spree/frontend/new_design/slick
+ *= require spree/frontend/new_design/nice-select
+ *= require spree/frontend/new_design/style
  *= require spree/frontend/spree_cloudinary
  *= require spree/frontend/spree_admin_roles_and_access
 */
