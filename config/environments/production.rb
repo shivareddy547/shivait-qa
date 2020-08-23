@@ -112,5 +112,7 @@ Rails.application.configure do
   config.active_storage.service = :cloudinary
 
   config.assets.paths << Rails.root.join('assets', 'fonts')
+  config.assets.paths << Rails.root.join('vendor', 'assets', 'fonts')
+  config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
   config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
 end
