@@ -6,13 +6,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require accounting.min
-//= require spree/frontend
-
-//= require_tree .
-//= require jquery
-//= require jquery_ujs
-
 //= require spree/frontend/new_design/vendor/modernizr-3.5.0.min
 //= require spree/frontend/new_design/vendor/jquery-1.12.4.min
 //= require spree/frontend/new_design/popper.min
@@ -34,6 +27,6 @@
 //= require spree/frontend/new_design/jquery.ajaxchimp.min
 //= require spree/frontend/new_design/plugins
 //= require spree/frontend/new_design/main
-//= require spree/frontend/spree_cloudinary
 
-//= require spree/frontend/spree_admin_roles_and_access
+
+

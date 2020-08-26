@@ -3,29 +3,43 @@
     <%= rel_next_prev_link_tags products %>
   <% end %>
 <% end %>
-
-<div class="col-md-12 col-lg-9" data-hook="homepage_products">
-  <div class="row">
-    <% cache cache_key_for_products(products) do %>
-      <% products.each_with_index do |product, index| %>
-        <div id="product_<%= product.id %>" class="col-sm-4 col-6 mb-3 mb-md-4 pr-sm-0 pr-md-0 pl-md-4 pl-sm-4 <%= index&1 == 0 ? 'pl-0 pr-2' : 'pr-0 pl-2' %>">
-          <%= render 'spree/shared/product', product: product, image_class: 'product-component-plp-image' %>
-        </div>
-      <% end %>
-    <% end %>
-  </div>
-
-  <% if products.respond_to?(:total_pages) %>
-    <div class="row pl-md-4 pl-sm-4">
-      <div class="col-12">
-        <div class="plp-pagination d-none d-lg-flex">
-          <%= paginate products, window: 2, theme: 'twitter-bootstrap-4' %>
-        </div>
-
-        <div class="plp-pagination d-lg-none">
-          <%= paginate products, window: 1, theme: 'twitter-bootstrap-4' %>
-        </div>
-      </div>
+<div data-hook="products_search_results_heading">
+  <% if products.empty? %>
+    <div data-hook="products_search_results_heading_no_results_found">
+      <%= Spree.t(:no_products_found) %>
     </div>
+  <% elsif params.key?(:keywords) %>
+    <div data-hook="products_search_results_heading_results_found">
+      <h6 class="search-results-title">
+        <%= Spree.t(:search_results, keywords: h(params[:keywords])) %>
+      </h6>
+    </div>
+  <% end %>
+</div>
+<% products = session[:country].present? && ENV["CAD_INVISIBLE_PRODUCTS"].present? && session[:country]==ENV["RESTRICTED_COUNTRY"] ? products.where.not(:id => get_product_ids) : products %>
+<% if products.any? %>
+  <div class="row" id="products">
+    <div class="product_landing">
+      <% if taxon.present? %>
+        <h5 class="subtaxon-title">
+          <%= link_to taxon.try(:name), seo_url(taxon), class: 'breadcrumbs' %>
+        </h5>
+      <% end %>
+      <ul class="regular-<%= taxon.try(:id) %> cards slider for-desktop">
+        <%= render partial: 'spree/products/product', collection: products, locals: { taxon: @taxon } %>
+      </ul>
+      <div class="prod_mob">
+        <%#= render partial: 'spree/products/product_mob', collection: products, locals: { taxon: @taxon } %>
+      </div>
+      <% #%button.slick-prev.slick-arrow.prev %>
+      <% #  %i.glyphicon.glyphicon-chevron-next.gly_btn %>
+      <% #%button.slick-next.slick-arrow.next %>
+      <% #  %i.glyphicon.glyphicon-chevron-right.gly_btn %>
+    </div>
+  </div>
+<% end %>
+<div style="display: flex; justify-content: center">
+  <% if products.respond_to?(:total_pages) %>
+    <%= paginate products, theme: 'twitter-bootstrap-3' %>
   <% end %>
 </div>

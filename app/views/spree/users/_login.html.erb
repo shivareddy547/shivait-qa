@@ -1,0 +1,36 @@
+
+<% if !spree_current_user.present? %>
+<ul>
+  <li><a href="" class="" data-toggle="modal" data-target="#modalLoginForm"> <i class="ti-user"></i>Login</a></li>
+  <li><a href="" class="" data-toggle="modal" data-target="#modalRegisterForm"><i class="ti-lock"></i>Register</a></li>
+</ul>
+<% else %>
+
+  <div class="dropdown">
+    <a href="" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle" data-toggle="modal" type="button"><i class="ti-user"></i><%= spree_current_user.email.capitalize %> </a>
+    <div class="dropdown-menu submenu" aria-labelledby="dropdownMenuButton">
+      <%= link_to "Profile", spree_current_user,:class=>"dropdown-item" %>
+      <%= link_to "Log out", logout_path, method: "delete",:class=>"dropdown-item" %>
+      <!--      <a class="dropdown-item" href="#">Another action</a>-->
+      <!--      <a class="dropdown-item" href="#">Something else here</a>-->
+    </div>
+  </div>
+
+
+<% end %>
+
+<style>
+  .dropdown a#dropdownMenuButton {
+    color: black !important;
+    outline: medium none;
+  }
+  .dropdown-menu a:hover {background-color: #ddd;}
+  .dropdown-menu {
+    border-top: 5px solid #2d3092;
+    width: 145px !important;
+    /*background: rgba(255,255,255,0.8) !important;*/
+  }
+  .slicknav_nav {
+    border: 5px solid #2d3092;
+  }
+</style>

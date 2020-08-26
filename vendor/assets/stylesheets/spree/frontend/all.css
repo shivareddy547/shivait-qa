@@ -21,6 +21,8 @@
  *= require spree/frontend/new_design/slick
  *= require spree/frontend/new_design/nice-select
  *= require spree/frontend/new_design/style
+ *= require spree/frontend/new_design/custom
  *= require spree/frontend/spree_cloudinary
  *= require spree/frontend/spree_admin_roles_and_access
+
 */

@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  get 'home/index'
+  get 'home/about'
+  get 'home/contact'
+
+
+  match 'about_us', to: 'spree/home#about', via: [:get]
+  match 'contact_us', to: 'spree/home#contact', via: [:get]
   # This line mounts Spree's routes at the root of your application.
   # This means, any requests to URLs such as /products, will go to
   # Spree::ProductsController.

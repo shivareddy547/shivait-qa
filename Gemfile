@@ -72,3 +72,7 @@ gem 'spree_admin_roles_and_access', path: 'spree_admin_roles_and_access'
 # gem 'spree_admin_roles_and_access', github: 'shivareddy547/spree_admin_roles_and_access'
 
 # gem 'spree_slider', github: 'spree-contrib/spree_slider'
+#
+gem 'popper_js'
+
+gem "mini_magick"

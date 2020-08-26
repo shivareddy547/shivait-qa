@@ -1,0 +1,138 @@
+- content_for :head do
+  - if products.respond_to?(:total_pages)
+    = rel_next_prev_link_tags products
+%div{"data-hook" => "products_search_results_heading"}
+  - if products.empty?
+    %div{"data-hook" => "products_search_results_heading_no_results_found"}
+      = Spree.t(:no_products_found)
+  - elsif params.key?(:keywords)
+    %div{"data-hook" => "products_search_results_heading_results_found"}
+      %h6.search-results-title= Spree.t(:search_results, keywords: h(params[:keywords]))
+- products = session[:country].present? && ENV["CAD_INVISIBLE_PRODUCTS"].present? && session[:country]==ENV["RESTRICTED_COUNTRY"] ? products.where.not(:id => get_product_ids) : products
+- if products.any?
+  #products.row{"data-hook" => ""}
+
+    .product_landing
+      - if taxon.present?
+        %h5.subtaxon-title= link_to taxon.try(:name), seo_url(taxon), class: 'breadcrumbs'
+      %ul.cards.slider.for-desktop{class: "regular-#{taxon.try(:id)}"}
+        = render partial: 'spree/products/product', collection: products, locals: { taxon: @taxon }
+      %div.prod_mob
+        = render partial: 'spree/products/product_mob', collection: products, locals: { taxon: @taxon }
+      -#%button.slick-prev.slick-arrow.prev
+      -#  %i.glyphicon.glyphicon-chevron-next.gly_btn
+      -#%button.slick-next.slick-arrow.next
+      -#  %i.glyphicon.glyphicon-chevron-right.gly_btn
+
+%div{:style => "display: flex; justify-content: center"}
+  - if products.respond_to?(:total_pages)
+    = paginate products, theme: 'twitter-bootstrap-3'
+
+
+
+:javascript
+  // $(document).ready(function () {
+  //
+  //  $(".inp_box").click(function(){
+  //   debugger;
+  //
+  //  $('img#a').attr("src",$(this).attr("value"));
+  //  $('img#a_hide').attr("src",$(this).attr("value"));
+  //
+  //     });
+  //
+  //  $(".abcd").hover(function() {
+  //   // alert("hiii");
+  //  // debugger;
+  //
+  //       // var test1 =  $('img#a_hide').attr('src');
+  //       // alert(test1);
+  //       // alert($(this).val());
+  //       console.log($(this).val());
+  //       console.log($(this).find("input").val());
+  //       $('img#a').attr("src",$(this).find("input").val());
+  //               // $(this).css("background-color", "green");
+  //           }, function() {
+  //               var test1 =  $('img#a_hide').attr('src');
+  //               // alert(test1)
+  //               // var test1 = $('img').attr('src');
+  //               $('img#a').attr("src",test1);
+  //               // $(this).css("background-color", "yellow");
+  //      });
+  //
+  //
+  //   });
+
+
+  // if ($(window).width() > 768){
+  //   $(".regular").slick({
+  //     dots: true,
+  //     infinite: true,
+  //     slidesToShow: 3,
+  //     slidesToScroll: 1
+  //
+  //   });
+  // }
+  var category_id = #{taxon.try(:id)};
+  if ($(window).width() > 767){
+    $('.regular-' + category_id).slick({
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 3000,
+
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: false
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+  }
+
+  // $(".home-add-cart").click(function() {
+  function quick_add(variant_id,item_limit_quantity)
+  {
+    var item_cart_quantity = 0;
+    if($(".popup-quantity-"+variant_id).length > 0)
+    {
+    var item_cart_quantity = $(".popup-quantity-"+variant_id).val();
+    }
+    var quantity = parseInt($("#quantity").val())+parseInt(item_cart_quantity);
+    // $(".quantity_limit_message.limit_message_error.quantity_limit_message-product-show").remove();
+    if( parseInt(item_limit_quantity) > 0 && parseInt(quantity) > parseInt(item_limit_quantity))
+    {
+    alert("Invalid Quantity ( Maximum available quantity per order: "+item_limit_quantity+")")
+    // $(".custom_cart_form").prepend("<div class='quantity_limit_message limit_message_error quantity_limit_message-product-show'>Invalid Quantity ( Maximum available quantity per order: "+item_limit_quantity+")</div>");
+    }
+    else{
+    // alert("no")
+    $("#home-add-cart-"+variant_id)[0].click();
+    }
+    }
+  // });
