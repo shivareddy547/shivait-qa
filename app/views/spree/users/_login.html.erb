@@ -1,8 +1,10 @@
 
 <% if !spree_current_user.present? %>
 <ul>
-  <li><a href="" class="" data-toggle="modal" data-target="#modalLoginForm"> <i class="ti-user"></i>Login</a></li>
-  <li><a href="" class="" data-toggle="modal" data-target="#modalRegisterForm"><i class="ti-lock"></i>Register</a></li>
+  <li>
+    <a href="/login" class="" > <i class="ti-user"></i>Login</a>
+  </li>
+  <li><a href="/signup" class="" ><i class="ti-lock"></i>Register</a></li>
 </ul>
 <% else %>
 

@@ -1,48 +1,70 @@
-<% permitted_params = params.permit(*filtering_params) %>
-<% products_empty = @products.empty? %>
+<div class="container-fluid">
+  <div class="row" data-hook="">
+    <aside class="col-sm-4 col-md-3" data-hook="" id="sidebar">
+      <div data-hook="homepage_sidebar_navigation">
+        <nav class="sidebar-item" data-hook="" id="taxonomies">
+          <h4 class="taxonomy-root">Shop by Categories</h4>
+          <div class="list-group">
+            <% Spree::Taxon.find_by_name("Categories").children.each do |taxon| %>
+              <%= link_to taxon.name, seo_url(taxon),class: "list-group-item list-group-item-action #{@taxon.present? && @taxon.id == taxon.id ? 'active' : '' }" %>
 
-<div data-hook="search_results">
-  <% if products_empty %>
-    <% if permitted_params[:keywords].present? && permitted_params.to_h.one? %>
-      <%= render 'spree/products/no_results' %>
-    <% else %>
-      <%= render 'spree/products/no_results_with_filters', permitted_params: permitted_params %>
-    <% end %>
-  <% else %>
-    <% if params[:keywords] %>
-      <div class="container d-md-flex pt-md-5">
-        <div class="plp-results-text text-uppercase mx-md-auto py-md-5">
-          <%= "#{@products.total_count} #{Spree.t('plp.results_for')} '#{params[:keywords].upcase}'" %>
+            <% end %>
+
+          </div>
+        </nav>
+
+      </div>
+
+    </aside>
+
+    <div class="col-md-12 col-lg-9" data-hook="homepage_products">
+      <%= paginate @products, theme: 'twitter-bootstrap-4' %>
+
+      <div class="row">
+        <% @products.each do |each_p| %>
+        <div id="product_<%= each_p.id %>>" class="col-sm-4 col-6 mb-3 mb-md-4 pr-sm-0 pr-md-0 pl-md-4 pl-sm-4 pl-0 pr-2">
+          <a class="h-80 d-flex flex-column justify-content-between" href="/products/<%= each_p.slug %>?taxon_id=<%= @taxon.present? ? each_p.taxons.first.id : @taxon %>>">
+            <%= small_image(each_p, class:"product-component-image d-block mw-100 w-100", alt:"#{each_p.name}") %>
+            <div>
+              <div class="product-component-name" title=" <%= each_p.name %>">
+                <%= each_p.name %>
+              </div>
+              <div class="product-component-price">
+                <%#= each_p.description.truncate(400, separator: /\s/) %>
+                <%= sanitize product_description(each_p).truncate(300) %>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <% end %>
+      </div>
+
+      <div class="row pl-md-4 pl-sm-4">
+        <div class="col-12">
+          <div class="plp-pagination d-none d-lg-flex">
+            <ul class="pagination mt-4 ">
+              <% if @products.respond_to?(:total_pages) %>
+                <%= paginate @products, theme: 'twitter-bootstrap-4' %>
+              <% end %>
+            </ul>
+
+          </div>
+          <div class="plp-pagination d-lg-none">
+            <ul class="pagination mt-4 ">
+              <% if @products.respond_to?(:total_pages) %>
+                <%= paginate @products, theme: 'twitter-bootstrap-4' %>
+              <% end %>
+
+            </ul>
+
+          </div>
         </div>
       </div>
-    <% elsif not @taxon %>
-      <div id="no-taxon-banner">
-        <div class="container">
-          <%= lazy_image(
-            src: asset_path('homepage/products.jpg'),
-            alt: 'products-banner',
-            width: 1110,
-            height: 300,
-            class: 'w-100 d-none d-md-block'
-          ) %>
-        </div>
-      </div>
-    <% end %>
-
-    <%= render 'spree/products/filter_and_sort_mobile_buttons' %>
-    <%= render 'spree/products/sort_desktop', permitted_params: permitted_params %>
-    <div class="container mb-3 d-md-flex">
-      <%= render 'spree/products/filters_desktop', permitted_params: permitted_params %>
-      <%= render 'spree/shared/products', products: @products %>
     </div>
-  <% end %>
+  </div>
 </div>
+<style>
 
-<%= render 'spree/products/filters_mobile', permitted_params: permitted_params %>
-<%= render 'spree/products/sort_mobile', permitted_params: permitted_params %>
 
-<% unless products_empty %>
-  <% cache cache_key_for_products(@products, 'json-ld') do %>
-    <%= products_structured_data(@products) %>
-  <% end %>
-<% end %>
+</style>

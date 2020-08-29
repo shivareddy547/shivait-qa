@@ -47,7 +47,7 @@
                   <ul id="navigation">
                     <li><a href="/">Home</a></li>
                     <li><a href="about_us">About</a></li>
-                    <li><a href="contact_us">Courses</a></li>
+                    <li><a href="/products">Courses</a></li>
                     <li><a href="instructor.html">Instructors</a></li>
                     <li><a href="blog.html">Blog</a>
                       <ul class="submenu">
@@ -64,12 +64,23 @@
               </div>
               <!-- Header-btn -->
               <div class="header-search d-none d-lg-block">
-                <form action="#" class="form-box f-right ">
-                  <input type="text" name="Search" placeholder="Search Courses">
+                <%= form_tag spree.products_path, method: :get, class: "form-box f-right" do %>
+                  <%= search_field_tag :keywords,
+                                       params[:keywords],
+                                       placeholder: Spree.t(:search),
+                                       autofocus: true,
+                                       class: ""
+                  %>
                   <div class="search-icon">
-                    <i class="fas fa-search special-tag"></i>
+                    <i class="fas fa-search special-tag" onclick="$(this).closest('form').submit();">
+                    </i>
                   </div>
-                </form>
+
+                <% end %>
+
+                <div id="search-dropdown" class="p-0 px-md-4 py-md-2 w-100 shadow navbar-right-search-menu-dropdown hide-on-esc">
+                  <%= render partial: 'spree/shared/search' %>
+                </div>
               </div>
             </div>
             <!-- Mobile Menu -->
@@ -83,3 +94,9 @@
     <!-- Header End -->
   </header>
 <% end %>
+
+<script>
+
+
+
+</script>

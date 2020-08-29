@@ -11,46 +11,11 @@
   </head>
   <body class="<%= body_class %>" id="<%= @body_id || 'default' %>" data-hook="body">
     <%= render partial: 'spree/shared/header' %>
-<!--    <div class="homepage-hero-image mb-3 position-relative">-->
-<!--      <img class="hero-image position-absolute lazyloaded" data-src="https://d9rok4vaowhj0.cloudfront.net/assets/homepage/main_banner-30a34858367c682bd975733dcac39ae36eba20e8723637f4e50e7e4a1288da30.jpg" data-srcset="https://d9rok4vaowhj0.cloudfront.net/assets/homepage/main_banner-30a34858367c682bd975733dcac39ae36eba20e8723637f4e50e7e4a1288da30.jpg 1200w, https://d9rok4vaowhj0.cloudfront.net/assets/homepage/main_banner_tablet_landscape-9f6a7efbee140ae68e5048e75d7cbb27847b71b077945c3f07825ee5ebca9dc4.jpg 992w, https://d9rok4vaowhj0.cloudfront.net/assets/homepage/main_banner_tablet_portrait-39d15bdc431c319b947b46d0a65606ed11dfa192aa56a11c6ce2043c8e4e7bad.jpg 768w, https://d9rok4vaowhj0.cloudfront.net/assets/homepage/main_banner_mobile-9d294a3578b5dba97cee826396952c38644160dc13fbe01a5818ebe85b622710.jpg 576w" alt="Summer Collection" srcset="https://d9rok4vaowhj0.cloudfront.net/assets/homepage/main_banner-30a34858367c682bd975733dcac39ae36eba20e8723637f4e50e7e4a1288da30.jpg 1200w, https://d9rok4vaowhj0.cloudfront.net/assets/homepage/main_banner_tablet_landscape-9f6a7efbee140ae68e5048e75d7cbb27847b71b077945c3f07825ee5ebca9dc4.jpg 992w, https://d9rok4vaowhj0.cloudfront.net/assets/homepage/main_banner_tablet_portrait-39d15bdc431c319b947b46d0a65606ed11dfa192aa56a11c6ce2043c8e4e7bad.jpg 768w, https://d9rok4vaowhj0.cloudfront.net/assets/homepage/main_banner_mobile-9d294a3578b5dba97cee826396952c38644160dc13fbe01a5818ebe85b622710.jpg 576w" src="https://d9rok4vaowhj0.cloudfront.net/assets/homepage/main_banner-30a34858367c682bd975733dcac39ae36eba20e8723637f4e50e7e4a1288da30.jpg">-->
-
-<!--      <div class="hero-content">-->
-<!--        <div class="homepage-hero-image-text mb-2 mx-auto pb-3 pb-md-4">-->
-<!--          Summer Collection-->
-<!--        </div>-->
-<!--        <div>-->
-<!--          <a class="btn btn-primary spree-btn px-5" href="/products">SHOP NOW</a>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
-
+  <% if request.original_fullpath == "/"%>
     <div id="homepage-banner-desktop" class="carousel slide  homepage-carousel" data-interval="false">
       <div class="carousel-inner carousel-inner-width">
         <div class="carousel-item active">
           <div class="container1 position-relative">
-
-
-            <div class="row carousel-items-container">
-              <div class="homepage-hero-image mb-3 position-relative">
-                      <img class="hero-image position-absolute lazyloaded" data-src="https://d9rok4vaowhj0.cloudfront.net/assets/homepage/main_banner-30a34858367c682bd975733dcac39ae36eba20e8723637f4e50e7e4a1288da30.jpg" data-srcset="https://d9rok4vaowhj0.cloudfront.net/assets/homepage/main_banner-30a34858367c682bd975733dcac39ae36eba20e8723637f4e50e7e4a1288da30.jpg 1200w, https://d9rok4vaowhj0.cloudfront.net/assets/homepage/main_banner_tablet_landscape-9f6a7efbee140ae68e5048e75d7cbb27847b71b077945c3f07825ee5ebca9dc4.jpg 992w, https://d9rok4vaowhj0.cloudfront.net/assets/homepage/main_banner_tablet_portrait-39d15bdc431c319b947b46d0a65606ed11dfa192aa56a11c6ce2043c8e4e7bad.jpg 768w, https://d9rok4vaowhj0.cloudfront.net/assets/homepage/main_banner_mobile-9d294a3578b5dba97cee826396952c38644160dc13fbe01a5818ebe85b622710.jpg 576w" alt="Summer Collection" srcset="https://d9rok4vaowhj0.cloudfront.net/assets/homepage/main_banner-30a34858367c682bd975733dcac39ae36eba20e8723637f4e50e7e4a1288da30.jpg 1200w, https://d9rok4vaowhj0.cloudfront.net/assets/homepage/main_banner_tablet_landscape-9f6a7efbee140ae68e5048e75d7cbb27847b71b077945c3f07825ee5ebca9dc4.jpg 992w, https://d9rok4vaowhj0.cloudfront.net/assets/homepage/main_banner_tablet_portrait-39d15bdc431c319b947b46d0a65606ed11dfa192aa56a11c6ce2043c8e4e7bad.jpg 768w, https://d9rok4vaowhj0.cloudfront.net/assets/homepage/main_banner_mobile-9d294a3578b5dba97cee826396952c38644160dc13fbe01a5818ebe85b622710.jpg 576w" src="https://d9rok4vaowhj0.cloudfront.net/assets/homepage/main_banner-30a34858367c682bd975733dcac39ae36eba20e8723637f4e50e7e4a1288da30.jpg">
-
-                      <div class="hero-content">
-                        <div class="homepage-hero-image-text mb-2 mx-auto pb-3 pb-md-4">
-                          Summer Collection
-                        </div>
-                        <div>
-                          <a class="btn btn-primary spree-btn px-5" href="/products">SHOP NOW</a>
-                        </div>
-                      </div>
-                    </div>
-            </div>
-
-
-          </div>
-        </div>
-        <div class="carousel-item ">
-          <div class="container1 position-relative">
-
 
             <div class="row carousel-items-container">
               <div class="homepage-hero-image mb-3 position-relative">
@@ -67,7 +32,25 @@
               </div>
             </div>
 
+          </div>
+        </div>
+        <div class="carousel-item ">
+          <div class="container1 position-relative">
 
+            <div class="row carousel-items-container">
+              <div class="homepage-hero-image mb-3 position-relative">
+                <img class="hero-image position-absolute lazyloaded" data-src="https://d9rok4vaowhj0.cloudfront.net/assets/homepage/main_banner-30a34858367c682bd975733dcac39ae36eba20e8723637f4e50e7e4a1288da30.jpg" data-srcset="https://d9rok4vaowhj0.cloudfront.net/assets/homepage/main_banner-30a34858367c682bd975733dcac39ae36eba20e8723637f4e50e7e4a1288da30.jpg 1200w, https://d9rok4vaowhj0.cloudfront.net/assets/homepage/main_banner_tablet_landscape-9f6a7efbee140ae68e5048e75d7cbb27847b71b077945c3f07825ee5ebca9dc4.jpg 992w, https://d9rok4vaowhj0.cloudfront.net/assets/homepage/main_banner_tablet_portrait-39d15bdc431c319b947b46d0a65606ed11dfa192aa56a11c6ce2043c8e4e7bad.jpg 768w, https://d9rok4vaowhj0.cloudfront.net/assets/homepage/main_banner_mobile-9d294a3578b5dba97cee826396952c38644160dc13fbe01a5818ebe85b622710.jpg 576w" alt="Summer Collection" srcset="https://d9rok4vaowhj0.cloudfront.net/assets/homepage/main_banner-30a34858367c682bd975733dcac39ae36eba20e8723637f4e50e7e4a1288da30.jpg 1200w, https://d9rok4vaowhj0.cloudfront.net/assets/homepage/main_banner_tablet_landscape-9f6a7efbee140ae68e5048e75d7cbb27847b71b077945c3f07825ee5ebca9dc4.jpg 992w, https://d9rok4vaowhj0.cloudfront.net/assets/homepage/main_banner_tablet_portrait-39d15bdc431c319b947b46d0a65606ed11dfa192aa56a11c6ce2043c8e4e7bad.jpg 768w, https://d9rok4vaowhj0.cloudfront.net/assets/homepage/main_banner_mobile-9d294a3578b5dba97cee826396952c38644160dc13fbe01a5818ebe85b622710.jpg 576w" src="https://d9rok4vaowhj0.cloudfront.net/assets/homepage/main_banner-30a34858367c682bd975733dcac39ae36eba20e8723637f4e50e7e4a1288da30.jpg">
+
+                <div class="hero-content">
+                  <div class="homepage-hero-image-text mb-2 mx-auto pb-3 pb-md-4">
+                    Summer Collection
+                  </div>
+                  <div>
+                    <a class="btn btn-primary spree-btn px-5" href="/products">SHOP NOW</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -86,11 +69,9 @@
               </span>
           <span class="sr-only">Next</span>
         </a>
-        </div>
       </div>
     </div>
-
-
+  <% end %>
     <!--? Preloader Start -->
     <div id="preloader-active">
       <div class="preloader d-flex align-items-center justify-content-center">
@@ -102,6 +83,7 @@
         </div>
       </div>
     </div>
+
     <!-- Preloader Start -->
 
 <!--    <div id="overlay" class="overlay hide-on-esc"></div>-->

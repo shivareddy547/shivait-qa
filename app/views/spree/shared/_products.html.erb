@@ -20,7 +20,7 @@
 <% if products.any? %>
   <div class="row" id="products">
     <div class="product_landing">
-      <% if taxon.present? %>
+      <% if  taxon.present? %>
         <h5 class="subtaxon-title">
           <%= link_to taxon.try(:name), seo_url(taxon), class: 'breadcrumbs' %>
         </h5>
@@ -40,6 +40,6 @@
 <% end %>
 <div style="display: flex; justify-content: center">
   <% if products.respond_to?(:total_pages) %>
-    <%= paginate products, theme: 'twitter-bootstrap-3' %>
+    <%= paginate products, theme: 'twitter-bootstrap-4' %>
   <% end %>
 </div>

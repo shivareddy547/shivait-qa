@@ -1,3 +1,10 @@
 .header{
     margin-top: -74px;
 }
+
+.container{
+    width: 95% !important;
+}
+p.homepage-carousel-text a.list-group-item{
+    color: blueviolet !important;
+}

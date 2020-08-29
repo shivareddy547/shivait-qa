@@ -8,9 +8,7 @@ module Spree
 
       params[:id] = "categories" if params[:id].nil?
       @taxon = Spree::Taxon.friendly.find(params[:id])
-      p 1111111111111111111111111111111111111111111111111111111
-      p @taxon
-      p 3333333333333333333333333333333333333333333333333333
+
       return unless @taxon
 
       @searcher = build_searcher(params.merge(taxon: @taxon.id, include_images: true))
@@ -27,9 +25,7 @@ module Spree
       #   logger.debug "====putting order in cart state===="
       #   logger.info response
       # end
-      p 11111111111111111111111
-      p @taxon
-      p 2222222222222
+
     end
 
     def about
