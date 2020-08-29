@@ -8,3 +8,9 @@
 p.homepage-carousel-text a.list-group-item{
     color: blueviolet !important;
 }
+
+@media only screen and (max-width: 600px) {
+    .home-banner-next.carousel-icon-control--next {
+        margin-top: 17%;
+    }
+}
