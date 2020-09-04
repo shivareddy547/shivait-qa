@@ -77,6 +77,7 @@ gem 'popper_js'
 
 gem "mini_magick"
 
-# gem "spree_editor",:path=>"spree_editor"
-gem 'spree_editor', github: 'spree-contrib/spree_editor'
+gem "spree_editor",:path=>"spree_editor"
+# gem 'spree_editor', github: 'spree-contrib/spree_editor'
 gem 'coffee-script'
+gem "mini_magick"
