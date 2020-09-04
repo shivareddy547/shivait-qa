@@ -8,6 +8,18 @@ GIT
       cloudinary (>= 1.8)
       spree_core (= 4.1)
 
+GIT
+  remote: https://github.com/spree-contrib/spree_editor.git
+  revision: 58c3634918ab4adb1759892aba3d10e6daf2a31b
+  specs:
+    spree_editor (3.3.2)
+      ckeditor (~> 5.0.0)
+      deface (~> 1.0)
+      spree_backend (>= 3.1.0, < 5.0)
+      spree_core (>= 3.1.0, < 5.0)
+      spree_extension
+      tinymce-rails (~> 4.2.5)
+
 PATH
   remote: spree_admin_roles_and_access
   specs:
@@ -125,10 +137,16 @@ GEM
       mimemagic (>= 0.3.0)
       mini_mime (>= 0.1.3)
     childprocess (3.0.0)
+    ckeditor (5.0.0)
+      orm_adapter (~> 0.5.0)
     cldr-plurals-runtime-rb (1.0.1)
     cloudinary (1.16.1)
       aws_cf_signer
       rest-client
+    coffee-script (2.4.1)
+      coffee-script-source
+      execjs
+    coffee-script-source (1.12.2)
     concurrent-ruby (1.1.7)
     crass (1.0.6)
     css_parser (1.7.1)
@@ -402,6 +420,8 @@ GEM
     thor (0.20.3)
     thread_safe (0.3.6)
     tilt (2.0.10)
+    tinymce-rails (4.2.8)
+      railties (>= 3.1.1)
     turbolinks (5.2.1)
       turbolinks-source (~> 5.2)
     turbolinks-source (5.2.0)
@@ -443,6 +463,7 @@ DEPENDENCIES
   bootsnap (>= 1.4.2)
   byebug
   capybara (>= 2.15)
+  coffee-script
   jbuilder (~> 2.7)
   listen (~> 3.2)
   mini_magick
@@ -456,6 +477,7 @@ DEPENDENCIES
   spree_admin_roles_and_access!
   spree_auth_devise (~> 4.1)
   spree_cloudinary!
+  spree_editor!
   spree_gateway (~> 3.7)
   spree_scaffold!
   spring

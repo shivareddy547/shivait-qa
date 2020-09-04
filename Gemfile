@@ -76,3 +76,7 @@ gem 'spree_admin_roles_and_access', path: 'spree_admin_roles_and_access'
 gem 'popper_js'
 
 gem "mini_magick"
+
+# gem "spree_editor",:path=>"spree_editor"
+gem 'spree_editor', github: 'spree-contrib/spree_editor'
+gem 'coffee-script'
