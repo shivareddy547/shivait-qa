@@ -1,0 +1,654 @@
+--- 
+:zu: 
+  :currencies: 
+    :AED: 
+      :one: "i-Dirham yase-United Arab Emirates"
+      :other: "i-Dirham yase-United Arab Emirates"
+      :symbol: AED
+    :AFN: 
+      :one: "i-Afghan Afghani"
+      :other: "i-Afghan Afghani"
+      :symbol: AFN
+    :ALL: 
+      :one: "i-Albanian Lek"
+      :other: "i-Albanian Lek"
+      :symbol: ALL
+    :AMD: 
+      :one: "i-Armenian Dram"
+      :other: "i-Armenian Dram"
+      :symbol: AMD
+    :ANG: 
+      :one: "i-Netherlands Antillean Guilder"
+      :other: "i-Netherlands Antillean Guilder"
+      :symbol: ANG
+    :AOA: 
+      :one: "i-Angolan Kwanza"
+      :other: "i-Angolan Kwanza"
+      :symbol: AOA
+    :ARS: 
+      :one: "i-Argentina Peso"
+      :other: "i-Argentina Peso"
+      :symbol: $
+    :AUD: 
+      :one: "i-Austrilian Dollar"
+      :other: "i-Austrilian Dollar"
+      :symbol: A$
+    :AWG: 
+      :one: "i-Aruban Florin"
+      :other: "i-Aruban Florin"
+      :symbol: AWG
+    :AZN: 
+      :one: "i-Azerbaijani Manat"
+      :other: "i-Azerbaijani Manat"
+      :symbol: AZN
+    :BAM: 
+      :one: "i-Bosnia-Herzegovina Convertible Mark"
+      :other: "i-Bosnia-Herzegovina Convertible Mark"
+      :symbol: BAM
+    :BBD: 
+      :one: "i-Barbadian Dollar"
+      :other: "i-Barbadian Dollar"
+      :symbol: BBD
+    :BDT: 
+      :one: "i-Bangladeshi Taka"
+      :other: "i-Bangladeshi Taka"
+      :symbol: BDT
+    :BGN: 
+      :one: "i-Bulgarian Lev"
+      :other: "i-Bulgarian Lev"
+      :symbol: BGN
+    :BHD: 
+      :one: "i-Bahraini Dinar"
+      :other: "i-Bahraini Dinar"
+      :symbol: BHD
+    :BIF: 
+      :one: "i-Burundian Franc"
+      :other: "i-Burundian Franc"
+      :symbol: BIF
+    :BMD: 
+      :one: "i-Bermudan Dollar"
+      :other: "i-Bermudan Dollar"
+      :symbol: BMD
+    :BND: 
+      :one: "i-Brunei Dollar"
+      :other: "i-Brunei Dollar"
+      :symbol: BND
+    :BOB: 
+      :one: "i-Bolivian Boliviano"
+      :other: "i-Bolivian Boliviano"
+      :symbol: BOB
+    :BRL: 
+      :one: "i-Brazilian Real"
+      :other: "i-Brazilian Real"
+      :symbol: R$
+    :BSD: 
+      :one: "i-Bahamian Dollar"
+      :other: "i-Bahamian Dollar"
+      :symbol: BSD
+    :BTN: 
+      :one: "i-Bhutanese Ngultrum"
+      :other: "i-Bhutanese Ngultrum"
+      :symbol: BTN
+    :BWP: 
+      :one: "i-Botswana Pula"
+      :other: "i-Botswana Pula"
+      :symbol: BWP
+    :BYN: 
+      :one: "i-Belarusian Ruble"
+      :other: "i-Belarusian Ruble"
+      :symbol: BYN
+    :BYR: 
+      :one: "i-Belarusian Ruble (2000–2016)"
+      :other: "i-Belarusian Ruble (2000–2016)"
+      :symbol: BYR
+    :BZD: 
+      :one: "i-Belize Dollar"
+      :other: "i-Belize Dollar"
+      :symbol: BZD
+    :CAD: 
+      :one: "i-Candian Dollar"
+      :other: "i-Candian Dollar"
+      :symbol: CA$
+    :CDF: 
+      :one: "i-Congolese Franc"
+      :other: "i-Congolese Franc"
+      :symbol: CDF
+    :CHF: 
+      :one: "i-Swiss Franc"
+      :other: "i-Swiss Franc"
+      :symbol: CHF
+    :CLP: 
+      :one: "i-Chilean Peso"
+      :other: "i-Chilean Peso"
+      :symbol: CLP
+    :CNH: 
+      :one: CNH
+      :other: CNH
+    :CNY: 
+      :one: "i-Chinese Yuan"
+      :other: "i-Chinese Yuan"
+      :symbol: CN¥
+    :COP: 
+      :one: "i-Colombian Peso"
+      :other: "i-Colombian Peso"
+      :symbol: COP
+    :CRC: 
+      :one: "i-Costa Rican Colón"
+      :other: "i-Costa Rican Colón"
+      :symbol: CRC
+    :CUC: 
+      :one: "i-Cuban Convertable Peso"
+      :other: "i-Cuban Convertable Peso"
+      :symbol: CUC
+    :CUP: 
+      :one: "i-Cuban pesos"
+      :other: "i-Cuban pesos"
+      :symbol: CUP
+    :CVE: 
+      :one: "i-Cape Verdean Escudo"
+      :other: "i-Cape Verdean escudos"
+      :symbol: CVE
+    :CZK: 
+      :one: "i-Czech Republic Koruna"
+      :other: "i-Czech Republic Koruna"
+      :symbol: CZK
+    :DJF: 
+      :one: "i-Djiboutian Franc"
+      :other: "i-Djiboutian Franc"
+      :symbol: DJF
+    :DKK: 
+      :one: "i-Danish Krone"
+      :other: "i-Danish Krone"
+      :symbol: DKK
+    :DOP: 
+      :one: "i-Dominican Peso"
+      :other: "i-Dominican Peso"
+      :symbol: DOP
+    :DZD: 
+      :one: "i-Algerian Dinar"
+      :other: "i-Algerian Dinar"
+      :symbol: DZD
+    :EGP: 
+      :one: "i-Egyptian Pound"
+      :other: "i-Egyptian Pound"
+      :symbol: EGP
+    :ERN: 
+      :one: "i-Eritrean Nakfa"
+      :other: "i-Eritrean Nakfa"
+      :symbol: ERN
+    :ESP: 
+      :symbol: ₧
+    :ETB: 
+      :one: "i-Ethopian Birr"
+      :other: "i-Ethopian Birr"
+      :symbol: ETB
+    :EUR: 
+      :one: i-Euro
+      :other: i-Euro
+      :symbol: €
+    :FJD: 
+      :one: "i-Fijian Dollar"
+      :other: "i-Fijian Dollar"
+      :symbol: FJD
+    :FKP: 
+      :one: "i-Falkland Islands Pound"
+      :other: "i-Falkland Islands Pound"
+      :symbol: FKP
+    :GBP: 
+      :one: "i-British Pound"
+      :other: "i-British Pound"
+      :symbol: £
+    :GEL: 
+      :one: "i-Georgian Lari"
+      :other: "i-Georgian Lari"
+      :symbol: GEL
+    :GHS: 
+      :one: "i-Ghanaian Cedi"
+      :other: "i-Ghanaian cedis"
+      :symbol: GHS
+    :GIP: 
+      :one: "i-Gibraltar Pound"
+      :other: "i-Gibraltar Pound"
+      :symbol: GIP
+    :GMD: 
+      :one: "i-Gambian Dalasi"
+      :other: "i-Gambian dalasis"
+      :symbol: GMD
+    :GNF: 
+      :one: "i-Gunean Franc"
+      :other: "i-Guinean francs"
+      :symbol: GNF
+    :GTQ: 
+      :one: "i-Guatemalan Quetzal"
+      :other: "i-Guatemalan Quetzal"
+      :symbol: GTQ
+    :GYD: 
+      :one: "i-Guyanaese Dollar"
+      :other: "i-Guyanaese Dollar"
+      :symbol: GYD
+    :HKD: 
+      :one: "i-Hong Kong Dollar"
+      :other: "i-Hong Kong Dollar"
+      :symbol: HK$
+    :HNL: 
+      :one: "i-Honduran Lempira"
+      :other: "i-Honduran lempiras"
+      :symbol: HNL
+    :HRK: 
+      :one: "i-Croatian Kuna"
+      :other: "i-Croatian Kuna"
+      :symbol: HRK
+    :HTG: 
+      :one: "i-Haitian Gourde"
+      :other: "i-Haitian Gourde"
+      :symbol: HTG
+    :HUF: 
+      :one: "i-Hungarian Forint"
+      :other: "i-Hungarian Forint"
+      :symbol: HUF
+    :IDR: 
+      :one: "i-Indonesian Rupiah"
+      :other: "i-Indonesian Rupiah"
+      :symbol: IDR
+    :ILS: 
+      :one: "i-Israeli New Sheqel"
+      :other: "i-Israeli New Sheqel"
+      :symbol: ₪
+    :INR: 
+      :one: "i-Indian Rupee"
+      :other: "i-Indian Rupee"
+      :symbol: ₹
+    :IQD: 
+      :one: "i-Iraqi Dinar"
+      :other: "i-Iraqi Dinar"
+      :symbol: IQD
+    :IRR: 
+      :one: "i-Iranian Rial"
+      :other: "i-Iranian Rial"
+      :symbol: IRR
+    :ISK: 
+      :one: "i-Icelandic Króna"
+      :other: "i-Icelandic Króna"
+      :symbol: ISK
+    :JMD: 
+      :one: "i-Jamaican Dollar"
+      :other: "i-Jamaican Dollar"
+      :symbol: JMD
+    :JOD: 
+      :one: "i-Jordanian Dinar"
+      :other: "i-Jordanian Dinar"
+      :symbol: JOD
+    :JPY: 
+      :one: "i-Japanese Yen"
+      :other: "i-Japanese Yen"
+      :symbol: JP¥
+    :KES: 
+      :one: "i-Kenyan Shilling"
+      :other: "i-Kenyan Shilling"
+      :symbol: KES
+    :KGS: 
+      :one: "i-Kyrgystani Som"
+      :other: "i-Kyrgystani Som"
+      :symbol: KGS
+    :KHR: 
+      :one: "i-Cambodian Riel"
+      :other: "i-Cambodian Riel"
+      :symbol: KHR
+    :KMF: 
+      :one: "i-Comorian Franc"
+      :other: "i-Comorian Franc"
+      :symbol: KMF
+    :KPW: 
+      :one: "i-North Korean Won"
+      :other: "i-North Korean Won"
+      :symbol: KPW
+    :KRW: 
+      :one: "i-South Korean Won"
+      :other: "i-South Korean Won"
+      :symbol: ₩
+    :KWD: 
+      :one: "i-Kuwaiti Dinar"
+      :other: "i-Kuwaiti Dinar"
+      :symbol: KWD
+    :KYD: 
+      :one: "i-Cayman Islands Dollar"
+      :other: "i-Cayman Islands Dollar"
+      :symbol: KYD
+    :KZT: 
+      :one: "i-Kazakhstani Tenge"
+      :other: "i-Kazakhstani Tenge"
+      :symbol: KZT
+    :LAK: 
+      :one: "i-Laotian Kip"
+      :other: "i-Laotian Kip"
+      :symbol: LAK
+    :LBP: 
+      :one: "i-Lebanese Pound"
+      :other: "i-Lebanese Pound"
+      :symbol: LBP
+    :LKR: 
+      :one: "i-Sri Lankan Rupee"
+      :other: "i-Sri Lankan Rupee"
+      :symbol: LKR
+    :LRD: 
+      :one: "i-Liberian Dollar"
+      :other: "i-Liberian Dollar"
+      :symbol: LRD
+    :LSL: 
+      :one: "i-Lesotho Loti"
+    :LTL: 
+      :one: "i-Lithuanian Litas"
+      :symbol: Lt
+    :LVL: 
+      :one: "i-Latvian Lats"
+      :symbol: Ls
+    :LYD: 
+      :one: "i-Libyan Dinar"
+      :other: "i-Libyan Dinar"
+      :symbol: LYD
+    :MAD: 
+      :one: "i-Moroccan Dirham"
+      :other: "i-Moroccan Dirham"
+      :symbol: MAD
+    :MDL: 
+      :one: "i-Moldovan Leu"
+      :other: "i-Moldovan Leu"
+      :symbol: MDL
+    :MGA: 
+      :one: "i-Malagasy Ariary"
+      :other: "i-Malagasy Ariary"
+      :symbol: MGA
+    :MKD: 
+      :one: "i-Macedonian Denar"
+      :other: "i-Macedonian Denar"
+      :symbol: MKD
+    :MMK: 
+      :one: "i-Myanma Kyat"
+      :other: "i-Myanma Kyat"
+      :symbol: MMK
+    :MNT: 
+      :one: "i-Mongolian Tugrik"
+      :other: "i-Mongolian Tugrik"
+      :symbol: MNT
+    :MOP: 
+      :one: "i-Macanese Pataca"
+      :other: "i-Macanese Pataca"
+      :symbol: MOP
+    :MRO: 
+      :one: "i-Mauritanian Ouguiya (1973–2017)"
+      :other: "i-Mauritanian Ouguiya (1973–2017)"
+      :symbol: MRO
+    :MRU: 
+      :one: "i-Mauritanian Ouguiya"
+      :other: "i-Mauritanian Ouguiya"
+    :MUR: 
+      :one: "i-Mauritian Rupee"
+      :other: "i-Mauritian Rupee"
+      :symbol: MUR
+    :MVR: 
+      :one: "i-Maldivian Rufiyana"
+      :other: "i-Maldivian Rufiyana"
+      :symbol: MVR
+    :MWK: 
+      :one: "i-Malawian Kwacha"
+      :other: "i-Malawian Kwacha"
+      :symbol: MWK
+    :MXN: 
+      :one: "i-Mexican Peso"
+      :other: "i-Mexican Peso"
+      :symbol: MX$
+    :MYR: 
+      :one: "i-Malaysian Ringgit"
+      :other: "i-Malaysian Ringgit"
+      :symbol: MYR
+    :MZN: 
+      :one: "i-Mozambican Metical"
+      :other: "i-Mozambican Metical"
+      :symbol: MZN
+    :NAD: 
+      :one: "i-Namibian Dollar"
+      :other: "i-Namibian Dollar"
+      :symbol: NAD
+    :NGN: 
+      :one: "i-Nigerian Naira"
+      :other: "i-Nigerian Naira"
+      :symbol: NGN
+    :NIO: 
+      :one: "i-Nicaraguan Córdoba"
+      :other: "i-Nicaraguan Córdoba"
+      :symbol: NIO
+    :NOK: 
+      :one: "i-Norwegian Krone"
+      :other: "i-Norwegian Krone"
+      :symbol: NOK
+    :NPR: 
+      :one: "i-Nepalese Rupee"
+      :other: "i-Nepalese Rupee"
+      :symbol: NPR
+    :NZD: 
+      :one: "i-New Zealand Dollar"
+      :other: "i-New Zealand Dollar"
+      :symbol: NZ$
+    :OMR: 
+      :one: "i-Omani Rial"
+      :other: "i-Omani Rial"
+      :symbol: OMR
+    :PAB: 
+      :one: "i-Panamanian Balboa"
+      :other: "i-Panamanian Balboa"
+      :symbol: PAB
+    :PEN: 
+      :one: "i-Peruvian Nuevo Sol"
+      :other: "i-Peruvian Nuevo Sol"
+      :symbol: PEN
+    :PGK: 
+      :one: "i-Papua New Guinean Kina"
+      :other: "i-Papua New Guinean Kina"
+      :symbol: PGK
+    :PHP: 
+      :one: "i-Philippine Peso"
+      :other: "i-Philippine Peso"
+      :symbol: PHP
+    :PKR: 
+      :one: "i-Pakistani Rupee"
+      :other: "i-Pakistani Rupee"
+      :symbol: PKR
+    :PLN: 
+      :one: "i-Polish Zloty"
+      :other: "i-Polish Zloty"
+      :symbol: PLN
+    :PYG: 
+      :one: "i-Paraguayan Guarani"
+      :other: "i-Paraguayan Guarani"
+      :symbol: PYG
+    :QAR: 
+      :one: "i-Qatari Rial"
+      :other: "i-Qatari Rial"
+      :symbol: QAR
+    :RON: 
+      :one: "i-Romanian leu"
+      :other: "i-Romanian lei"
+      :symbol: RON
+    :RSD: 
+      :one: "i-Serbian Dinar"
+      :other: "i-Serbian Dinar"
+      :symbol: RSD
+    :RUB: 
+      :one: "i-Russian Ruble"
+      :other: "i-Russian Ruble"
+      :symbol: RUB
+    :RUR: 
+      :symbol: р.
+    :RWF: 
+      :one: "i-Rwandan Franc"
+      :other: "i-Rwandan Franc"
+      :symbol: RWF
+    :SAR: 
+      :one: "i-Saudi Riyal"
+      :other: "i-Saudi Riyal"
+      :symbol: SAR
+    :SBD: 
+      :one: "i-Solomon Islands Dollar"
+      :other: "i-Solomon Islands Dollar"
+      :symbol: SBD
+    :SCR: 
+      :one: "i-Seychellois Rupee"
+      :other: "i-Seychellois Rupee"
+      :symbol: SCR
+    :SDG: 
+      :one: "i-Sudanese Pound"
+      :other: "i-Sudanese Pound"
+      :symbol: SDG
+    :SEK: 
+      :one: "i-Swedish Krona"
+      :other: "i-Swedish Krona"
+      :symbol: SEK
+    :SGD: 
+      :one: "i-Singapore Dollar"
+      :other: "i-Singapore Dollar"
+      :symbol: SGD
+    :SHP: 
+      :one: "i-Saint Helena Pound"
+      :other: "i-Saint Helena Pound"
+      :symbol: SHP
+    :SLL: 
+      :one: "i-Sierra Leonean Leone"
+      :other: "i-Sierra Leonean Leone"
+      :symbol: SLL
+    :SOS: 
+      :one: "i-Somali Shilling"
+      :other: "i-Somali Shilling"
+      :symbol: SOS
+    :SRD: 
+      :one: "i-Surinamese Dollar"
+      :other: "i-Surinamese Dollar"
+      :symbol: SRD
+    :SSP: 
+      :one: "i-South Sudanese Pound"
+      :other: "i-South Sudanese Pound"
+      :symbol: SSP
+    :STD: 
+      :one: "i-São Tomé kanye ne-Príncipe Dobra (1977–2017)"
+      :other: "i-São Tomé kanye ne-Príncipe Dobra (1977–2017)"
+      :symbol: STD
+    :STN: 
+      :one: "i-São Tomé kanye ne-Príncipe Dobra"
+      :other: "i-São Tomé kanye ne-Príncipe Dobra"
+      :symbol: Db
+    :SYP: 
+      :one: "i-Syrian Pound"
+      :other: "i-Syrian Pound"
+      :symbol: SYP
+    :SZL: 
+      :one: "i-Swazi Lilangeni"
+      :other: "i-Swazi Lilangeni"
+      :symbol: SZL
+    :THB: 
+      :one: "i-Thai Baht"
+      :other: "i-Thai Baht"
+      :symbol: ฿
+    :TJS: 
+      :one: "i-Tajikistani Somoni"
+      :other: "i-Tajikistani Somoni"
+      :symbol: TJS
+    :TMT: 
+      :one: "i-Turkmenistani Manat"
+      :other: "i-Turkmenistani Manat"
+      :symbol: TMT
+    :TND: 
+      :one: "i-Tunisian Dinar"
+      :other: "i-Tunisian Dinar"
+      :symbol: TND
+    :TOP: 
+      :one: "i-Tongan Paʻanga"
+      :other: "i-Tongan Paʻanga"
+      :symbol: TOP
+    :TRY: 
+      :one: "i-Turkish Lira"
+      :other: "i-Turkish Lira"
+      :symbol: TRY
+    :TTD: 
+      :one: "i-Trinidad and Tobago dollar"
+      :other: "i-Trinidad & Tobago dollars"
+      :symbol: TTD
+    :TWD: 
+      :one: "i-New Taiwan Dollar"
+      :other: "i-New Taiwan Dollar"
+      :symbol: NT$
+    :TZS: 
+      :one: "i-Tanzanian Shilling"
+      :other: "i-Tanzanian Shilling"
+      :symbol: TZS
+    :UAH: 
+      :one: "i-Ukrainian Hryvnia"
+      :other: "i-Ukrainian Hryvnia"
+      :symbol: UAH
+    :UGX: 
+      :one: "i-Ugandan Shilling"
+      :other: "i-Ugandan Shilling"
+      :symbol: UGX
+    :USD: 
+      :one: "i-US Dollar"
+      :other: "i-US Dollar"
+      :symbol: $
+    :UYU: 
+      :one: "i-Uruguayan Peso"
+      :other: "i-Uruguayan Peso"
+      :symbol: UYU
+    :UZS: 
+      :one: "i-Uzbekistan Som"
+      :other: "i-Uzbekistan Som"
+      :symbol: UZS
+    :VEF: 
+      :one: "i-Venezuelan Bolívar (2008–2018)"
+      :other: "i-Venezuelan Bolívar (2008–2018)"
+      :symbol: VEF
+    :VES: 
+      :one: "i-Venezuelan Bolívar"
+      :other: "i-Venezuelan Bolívar"
+    :VND: 
+      :one: "i-Vietnamese Dong"
+      :other: "i-Vietnamese Dong"
+      :symbol: ₫
+    :VUV: 
+      :one: "i-Vanuatu Vatu"
+      :other: "i-Vanuatu Vatu"
+      :symbol: VUV
+    :WST: 
+      :one: "i-Samoan Tala"
+      :other: "i-Samoan Tala"
+      :symbol: WST
+    :XAF: 
+      :one: "i-CFA Franc BCEA"
+      :other: "i-CFA Franc BCEA"
+      :symbol: FCFA
+    :XCD: 
+      :one: "i-East Caribbean Dollar"
+      :other: "i-East Caribbean Dollar"
+      :symbol: EC$
+    :XOF: 
+      :one: "i-West African CFA Franc"
+      :other: "i-West African CFA francs"
+      :symbol: CFA
+    :XPF: 
+      :one: "i-CFP Franc"
+      :other: "i-CFP Franc"
+      :symbol: CFPF
+    :XXX: 
+      :one: "imali engaziwa"
+      :other: "imali engaziwa"
+      :symbol: ¤
+    :YER: 
+      :one: "i-Yemeni Rial"
+      :other: "i-Yemeni Rial"
+      :symbol: YER
+    :ZAR: 
+      :one: "i-South African Rand"
+      :other: "i-South African Rand"
+      :symbol: R
+    :ZMK: 
+      :one: "i-Zambian Kwacha (1968–2012)"
+    :ZMW: 
+      :one: "i-Zambian Kwacha"
+      :other: "i-Zambian Kwacha"
+      :symbol: ZMW

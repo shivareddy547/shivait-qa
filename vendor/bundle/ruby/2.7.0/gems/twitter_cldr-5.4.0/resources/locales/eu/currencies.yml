@@ -1,0 +1,659 @@
+--- 
+:eu: 
+  :currencies: 
+    :AED: 
+      :one: "Arabiar Emirerri Batuetako dirham"
+      :other: "Arabiar Emirerri Batuetako dirham"
+      :symbol: AED
+    :AFN: 
+      :one: "afgani afganiar"
+      :other: "afgani afganiar"
+      :symbol: AFN
+    :ALL: 
+      :one: "lek albaniar"
+      :other: "lek albaniar"
+      :symbol: ALL
+    :AMD: 
+      :one: "dram armeniar"
+      :other: "dram armeniar"
+      :symbol: AMD
+    :ANG: 
+      :one: "Holandarren Antilletako florin"
+      :other: "Holandarren Antilletako florin"
+      :symbol: ANG
+    :AOA: 
+      :one: "kwanza angolar"
+      :other: "kwanza angolar"
+      :symbol: AOA
+    :ARS: 
+      :one: "peso argentinar"
+      :other: "peso argentinar"
+      :symbol: ARS
+    :AUD: 
+      :one: "dolar australiar"
+      :other: "dolar australiar"
+      :symbol: A$
+    :AWG: 
+      :one: "florin arubar"
+      :other: "florin arubar"
+      :symbol: AWG
+    :AZN: 
+      :one: "manat azerbaijandar"
+      :other: "manat azerbaijandar"
+      :symbol: AZN
+    :BAM: 
+      :one: "marko bihurgarri bosniar"
+      :other: "marko bihurgarri bosniar"
+      :symbol: BAM
+    :BBD: 
+      :one: "dolar barbadostar"
+      :other: "dolar barbadostar"
+      :symbol: BBD
+    :BDT: 
+      :one: "taka bangladeshtar"
+      :other: "taka bangladeshtar"
+      :symbol: BDT
+    :BGN: 
+      :one: "lev bulgariar"
+      :other: "lev bulgariar"
+      :symbol: BGN
+    :BHD: 
+      :one: "dinar bahraindar"
+      :other: "dinar bahraindar"
+      :symbol: BHD
+    :BIF: 
+      :one: "franko burundiar"
+      :other: "franko burundiar"
+      :symbol: BIF
+    :BMD: 
+      :one: "dolar bermudar"
+      :other: "dolar bermudar"
+      :symbol: BMD
+    :BND: 
+      :one: "dolar bruneitar"
+      :other: "dolar bruneitar"
+      :symbol: BND
+    :BOB: 
+      :one: "boliviano boliviar"
+      :other: "boliviano boliviar"
+      :symbol: BOB
+    :BRL: 
+      :one: "erreal brasildar"
+      :other: "erreal brasildar"
+      :symbol: R$
+    :BSD: 
+      :one: "dolar bahamar"
+      :other: "dolar bahamar"
+      :symbol: BSD
+    :BTN: 
+      :one: "ngultrum bhutandar"
+      :other: "ngultrum bhutandar"
+      :symbol: BTN
+    :BWP: 
+      :one: "pula botswanar"
+      :other: "pula botswanar"
+      :symbol: BWP
+    :BYN: 
+      :one: "errublo bielorrusiar"
+      :other: "errublo bielorrusiar"
+      :symbol: BYN
+    :BYR: 
+      :one: "Bielorrusiako errublo (2000–2016)"
+      :other: "Bielorrusiako errublo (2000–2016)"
+      :symbol: BYR
+    :BZD: 
+      :one: "dolar belizetar"
+      :other: "dolar belizetar"
+      :symbol: BZD
+    :CAD: 
+      :one: "dolar kanadar"
+      :other: "dolar kanadar"
+      :symbol: CA$
+    :CDF: 
+      :one: "franko kongoar"
+      :other: "franko kongoar"
+      :symbol: CDF
+    :CHF: 
+      :one: "franko suitzar"
+      :other: "franko suitzar"
+      :symbol: CHF
+    :CLP: 
+      :one: "peso txiletar"
+      :other: "peso txiletar"
+      :symbol: CLP
+    :CNH: 
+      :one: "yuan txinatar (itsasoz haraindikoa)"
+      :other: "yuan txinatar (itsasoz haraindikoa)"
+      :symbol: CNH
+    :CNY: 
+      :one: "yuan txinatar"
+      :other: "yuan txinatar"
+      :symbol: CN¥
+    :COP: 
+      :one: "peso kolonbiar"
+      :other: "peso kolonbiar"
+      :symbol: COP
+    :CRC: 
+      :one: "Costa Ricako colon"
+      :other: "Costa Ricako colon"
+      :symbol: CRC
+    :CUC: 
+      :one: "peso bihurgarri kubatar"
+      :other: "peso bihurgarri kubatar"
+      :symbol: CUC
+    :CUP: 
+      :one: "peso kubatar"
+      :other: "peso kubatar"
+      :symbol: CUP
+    :CVE: 
+      :one: "ezkutu caboverdetar"
+      :other: "ezkutu caboverdetar"
+      :symbol: CVE
+    :CZK: 
+      :one: "koroa txekiar"
+      :other: "koroa txekiar"
+      :symbol: CZK
+    :DJF: 
+      :one: "franko djibutiar"
+      :other: "franko djibutiar"
+      :symbol: DJF
+    :DKK: 
+      :one: "koroa danimarkar"
+      :other: "koroa danimarkar"
+      :symbol: DKK
+    :DOP: 
+      :one: "peso dominikar"
+      :other: "peso dominikar"
+      :symbol: DOP
+    :DZD: 
+      :one: "dinar aljeriar"
+      :other: "dinar aljeriar"
+      :symbol: DZD
+    :EGP: 
+      :one: "libera egiptoar"
+      :other: "libera egiptoar"
+      :symbol: EGP
+    :ERN: 
+      :one: "nakfa eritrear"
+      :other: "nakfa eritrear"
+      :symbol: ERN
+    :ESP: 
+      :symbol: ₧
+    :ETB: 
+      :one: "birr etiopiar"
+      :other: "birr etiopiar"
+      :symbol: ETB
+    :EUR: 
+      :one: euro
+      :other: euro
+      :symbol: €
+    :FJD: 
+      :one: "dolar fijiar"
+      :other: "dolar fijiar"
+      :symbol: FJD
+    :FKP: 
+      :one: "libera falklandar"
+      :other: "libera falklandar"
+      :symbol: FKP
+    :GBP: 
+      :one: "libera esterlina"
+      :other: "libera esterlina"
+      :symbol: £
+    :GEL: 
+      :one: "lari georgiar"
+      :other: "lari georgiar"
+      :symbol: GEL
+    :GHS: 
+      :one: "cedi ghanatar"
+      :other: "cedi ghanatar"
+      :symbol: GHS
+    :GIP: 
+      :one: "libera gibraltartar"
+      :other: "libera gibraltartar"
+      :symbol: GIP
+    :GMD: 
+      :one: "dalasi ganbiar"
+      :other: "dalasi ganbiar"
+      :symbol: GMD
+    :GNF: 
+      :one: "franko ginear"
+      :other: "franko ginear"
+      :symbol: GNF
+    :GTQ: 
+      :one: "ketzal guatemalar"
+      :other: "ketzal guatemalar"
+      :symbol: GTQ
+    :GYD: 
+      :one: "dolar guyanar"
+      :other: "dolar guyanar"
+      :symbol: GYD
+    :HKD: 
+      :one: "dolar hongkongtar"
+      :other: "dolar hongkongtar"
+      :symbol: HK$
+    :HNL: 
+      :one: "lempira hodurastar"
+      :other: "lempira hodurastar"
+      :symbol: HNL
+    :HRK: 
+      :one: "kuna kroaziar"
+      :other: "kuna kroaziar"
+      :symbol: HRK
+    :HTG: 
+      :one: "gourde haitiar"
+      :other: "gourde haitiar"
+      :symbol: HTG
+    :HUF: 
+      :one: "florin hungariar"
+      :other: "florin hungariar"
+      :symbol: HUF
+    :IDR: 
+      :one: "errupia indonesiar"
+      :other: "errupia indonesiar"
+      :symbol: IDR
+    :ILS: 
+      :one: "shekel israeldar berri"
+      :other: "shekel israeldar berri"
+      :symbol: ₪
+    :INR: 
+      :one: "errupia indiar"
+      :other: "errupia indiar"
+      :symbol: ₹
+    :IQD: 
+      :one: "dinar irakiar"
+      :other: "dinar irakiar"
+      :symbol: IQD
+    :IRR: 
+      :one: "rial irandar"
+      :other: "rial irandar"
+      :symbol: IRR
+    :ISK: 
+      :one: "koroa islandiar"
+      :other: "koroa islandiar"
+      :symbol: ISK
+    :JMD: 
+      :one: "dolar jamaikar"
+      :other: "dolar jamaikar"
+      :symbol: JMD
+    :JOD: 
+      :one: "dinar jordaniar"
+      :other: "dinar jordaniar"
+      :symbol: JOD
+    :JPY: 
+      :one: "yen japoniar"
+      :other: "yen japoniar"
+      :symbol: JP¥
+    :KES: 
+      :one: "txelin kenyar"
+      :other: "txelin kenyar"
+      :symbol: KES
+    :KGS: 
+      :one: "som kirgizistandar"
+      :other: "som kirgizistandar"
+      :symbol: KGS
+    :KHR: 
+      :one: "riel kanbodiar"
+      :other: "riel kanbodiar"
+      :symbol: KHR
+    :KMF: 
+      :one: "franko komoretar"
+      :other: "franko komoretar"
+      :symbol: KMF
+    :KPW: 
+      :one: "won iparkorear"
+      :other: "won iparkorear"
+      :symbol: KPW
+    :KRW: 
+      :one: "won hegokorear"
+      :other: "won hegokorear"
+      :symbol: ₩
+    :KWD: 
+      :one: "dinar kuwaitar"
+      :other: "dinar kuwaitar"
+      :symbol: KWD
+    :KYD: 
+      :one: "dolar kaimandar"
+      :other: "dolar kaimandar"
+      :symbol: KYD
+    :KZT: 
+      :one: "tenge kazakhstandar"
+      :other: "tenge kazakhstandar"
+      :symbol: KZT
+    :LAK: 
+      :one: "kip laostar"
+      :other: "kip laostar"
+      :symbol: LAK
+    :LBP: 
+      :one: "libera libanoar"
+      :other: "libera libanoar"
+      :symbol: LBP
+    :LKR: 
+      :one: "errupia srilankar"
+      :other: "errupia srilankar"
+      :symbol: LKR
+    :LRD: 
+      :one: "dolar liberiar"
+      :other: "dolar liberiar"
+      :symbol: LRD
+    :LSL: 
+      :one: "Lesothoko lotia"
+    :LTL: 
+      :one: "Lituaniako litas"
+      :other: "Lituaniako litas"
+      :symbol: LTL
+    :LVL: 
+      :one: "Letoniako lats"
+      :other: "Letoniako lats"
+      :symbol: LVL
+    :LYD: 
+      :one: "dinar libiar"
+      :other: "dinar libiar"
+      :symbol: LYD
+    :MAD: 
+      :one: "dirham marokoar"
+      :other: "dirham marokoar"
+      :symbol: MAD
+    :MDL: 
+      :one: "leu moldaviar"
+      :other: "leu moldaviar"
+      :symbol: MDL
+    :MGA: 
+      :one: "ariary madagaskartar"
+      :other: "ariary madagaskartar"
+      :symbol: MGA
+    :MKD: 
+      :one: "dinar mazedoniar"
+      :other: "dinar mazedoniar"
+      :symbol: MKD
+    :MMK: 
+      :one: "kyat myanmartar"
+      :other: "kyat myanmartar"
+      :symbol: MMK
+    :MNT: 
+      :one: "tugrik mongoliar"
+      :other: "tugrik mongoliar"
+      :symbol: MNT
+    :MOP: 
+      :one: "pataca macauar"
+      :other: "pataca macauar"
+      :symbol: MOP
+    :MRO: 
+      :one: "Mauritaniako ouguiya (1973–2017)"
+      :other: "Mauritaniako ouguiya (1973–2017)"
+      :symbol: MRO
+    :MRU: 
+      :one: "uguiya mauritaniar"
+      :other: "uguiya mauritaniar"
+      :symbol: MRU
+    :MUR: 
+      :one: "errupia mauriziar"
+      :other: "errupia mauriziar"
+      :symbol: MUR
+    :MVR: 
+      :one: "errupia maldivar"
+      :other: "errupia maldivar"
+      :symbol: MVR
+    :MWK: 
+      :one: "kwacha malawiar"
+      :other: "kwacha malawiar"
+      :symbol: MWK
+    :MXN: 
+      :one: "peso mexikar"
+      :other: "peso mexikar"
+      :symbol: MX$
+    :MYR: 
+      :one: "ringgit malaysiar"
+      :other: "ringgit malaysiar"
+      :symbol: MYR
+    :MZN: 
+      :one: "metical mozambiketar"
+      :other: "metical mozambiketar"
+      :symbol: MZN
+    :NAD: 
+      :one: "dolar namibiar"
+      :other: "dolar namibiar"
+      :symbol: NAD
+    :NGN: 
+      :one: "naira nigeriar"
+      :other: "naira nigeriar"
+      :symbol: NGN
+    :NIO: 
+      :one: "córdoba nikaraguar"
+      :other: "córdoba nikaraguar"
+      :symbol: NIO
+    :NOK: 
+      :one: "koroa norvegiar"
+      :other: "koroa norvegiar"
+      :symbol: NOK
+    :NPR: 
+      :one: "errupia nepaldar"
+      :other: "errupia nepaldar"
+      :symbol: NPR
+    :NZD: 
+      :one: "dolar zeelandaberritar"
+      :other: "dolar zeelandaberritar"
+      :symbol: NZ$
+    :OMR: 
+      :one: "rial omandar"
+      :other: "rial omandar"
+      :symbol: OMR
+    :PAB: 
+      :one: "balboa panamar"
+      :other: "balboa panamar"
+      :symbol: PAB
+    :PEN: 
+      :one: "sol perutar"
+      :other: "Peruko sol"
+      :symbol: PEN
+    :PGK: 
+      :one: "kina gineaberriar"
+      :other: "kina gineaberriar"
+      :symbol: PGK
+    :PHP: 
+      :one: "peso filipinar"
+      :other: "peso filipinar"
+      :symbol: PHP
+    :PKR: 
+      :one: "errupia pakistandar"
+      :other: "errupia pakistandar"
+      :symbol: PKR
+    :PLN: 
+      :one: "zloty poloniar"
+      :other: "zloty poloniar"
+      :symbol: PLN
+    :PYG: 
+      :one: "guarani paraguaitar"
+      :other: "guarani paraguaitar"
+      :symbol: PYG
+    :QAR: 
+      :one: "riyal qatartar"
+      :other: "riyal qatartar"
+      :symbol: QAR
+    :RON: 
+      :one: "leu errumaniar"
+      :other: "leu errumaniar"
+      :symbol: RON
+    :RSD: 
+      :one: "dinar serbiar"
+      :other: "dinar serbiar"
+      :symbol: RSD
+    :RUB: 
+      :one: "errublo errusiar"
+      :other: "errublo errusiar"
+      :symbol: RUB
+    :RUR: 
+      :symbol: р.
+    :RWF: 
+      :one: "franko ruandar"
+      :other: "franko ruandar"
+      :symbol: RWF
+    :SAR: 
+      :one: "riyal saudiarabiar"
+      :other: "riyal saudiarabiar"
+      :symbol: SAR
+    :SBD: 
+      :one: "dolar salomondar"
+      :other: "dolar salomondar"
+      :symbol: SBD
+    :SCR: 
+      :one: "errupia seychelletar"
+      :other: "errupia seychelletar"
+      :symbol: SCR
+    :SDG: 
+      :one: "libera sudandar"
+      :other: "libera sudandar"
+      :symbol: SDG
+    :SEK: 
+      :one: "koroa suediar"
+      :other: "koroa suediar"
+      :symbol: SEK
+    :SGD: 
+      :one: "dolar singapurtar"
+      :other: "dolar singapurtar"
+      :symbol: SGD
+    :SHP: 
+      :one: "Santa Helenako libera"
+      :other: "Santa Helenako libera"
+      :symbol: SHP
+    :SLL: 
+      :one: "leone sierraleonar"
+      :other: "leone sierraleonar"
+      :symbol: SLL
+    :SOS: 
+      :one: "txelin somaliar"
+      :other: "txelin somaliar"
+      :symbol: SOS
+    :SRD: 
+      :one: "dolar surinamdar"
+      :other: "dolar surinamdar"
+      :symbol: SRD
+    :SSP: 
+      :one: "libera hegosudandar"
+      :other: "libera hegosudandar"
+      :symbol: SSP
+    :STD: 
+      :one: "Sao Tomeko eta Principeko dobra (1977–2017)"
+      :other: "Sao Tomeko eta Principeko dobra (1977–2017)"
+      :symbol: STD
+    :STN: 
+      :one: "dobra saotometar"
+      :other: "dobra saotometar"
+      :symbol: STN
+    :SYP: 
+      :one: "libera siriar"
+      :other: "libera siriar"
+      :symbol: SYP
+    :SZL: 
+      :one: "lilangeni swazilandiar"
+      :other: "lilangeni swazilandiar"
+      :symbol: SZL
+    :THB: 
+      :one: "baht thailandiar"
+      :other: "baht thailandiar"
+      :symbol: ฿
+    :TJS: 
+      :one: "somoni tajikistandar"
+      :other: "somoni tajikistandar"
+      :symbol: TJS
+    :TMT: 
+      :one: "manat turkmenistandar"
+      :other: "manat turkmenistandar"
+      :symbol: TMT
+    :TND: 
+      :one: "dinar tunisiar"
+      :other: "dinar tunisiar"
+      :symbol: TND
+    :TOP: 
+      :one: "Tongako Paʻanga"
+      :other: "Tongako Paʻanga"
+      :symbol: TOP
+    :TRY: 
+      :one: "lira turkiar"
+      :other: "lira turkiar"
+      :symbol: TRY
+    :TTD: 
+      :one: "Trinidad eta Tobagoko dolar"
+      :other: "Trinidad eta Tobagoko dolar"
+      :symbol: TTD
+    :TWD: 
+      :one: "dolar taiwandar berri"
+      :other: "dolar taiwandar berri"
+      :symbol: NT$
+    :TZS: 
+      :one: "txelin tanzaniar"
+      :other: "txelin tanzaniar"
+      :symbol: TZS
+    :UAH: 
+      :one: "Ukrainako hryvnia"
+      :other: "Ukrainako hryvnia"
+      :symbol: UAH
+    :UGX: 
+      :one: "txelin ugandar"
+      :other: "txelin ugandar"
+      :symbol: UGX
+    :USD: 
+      :one: "dolar estatubatuar"
+      :other: "dolar estatubatuar"
+      :symbol: US$
+    :UYU: 
+      :one: "peso uruguaitar"
+      :other: "peso uruguaitar"
+      :symbol: UYU
+    :UZS: 
+      :one: "sum uzbekistandar"
+      :other: "sum uzbekistandar"
+      :symbol: UZS
+    :VEF: 
+      :one: "Venezuelako bolivar (2008–2018)"
+      :other: "Venezuelako bolivar (2008–2018)"
+      :symbol: VEF
+    :VES: 
+      :one: "bolivar venezuelar"
+      :other: "bolivar venezuelar"
+      :symbol: VES
+    :VND: 
+      :one: "dong vietnamdar"
+      :other: "dong vietnamdar"
+      :symbol: ₫
+    :VUV: 
+      :one: "vatu vanuatuar"
+      :other: "vatu vanuatuar"
+      :symbol: VUV
+    :WST: 
+      :one: "tala samoar"
+      :other: "tala samoar"
+      :symbol: WST
+    :XAF: 
+      :one: "Afrika erdialdeko CFA franko"
+      :other: "Afrika erdialdeko CFA franko"
+      :symbol: FCFA
+    :XCD: 
+      :one: "Karibe ekialdeko dolar"
+      :other: "Karibe ekialdeko dolar"
+      :symbol: EC$
+    :XOF: 
+      :one: "Afrika mendebaldeko CFA franko"
+      :other: "Afrika mendebaldeko CFA franko"
+      :symbol: CFA
+    :XPF: 
+      :one: "CFP franko"
+      :other: "CFP franko"
+      :symbol: CFPF
+    :XXX: 
+      :one: "(moneta ezezaguna)"
+      :other: "(moneta ezezaguna)"
+      :symbol: ¤
+    :YER: 
+      :one: "rial yemendar"
+      :other: "rial yemendar"
+      :symbol: YER
+    :ZAR: 
+      :one: "rand hegoafrikar"
+      :other: "rand hegoafrikar"
+      :symbol: ZAR
+    :ZMK: 
+      :one: "Zambiako kwacha (1968–2012)"
+    :ZMW: 
+      :one: "kwacha zambiar"
+      :other: "Zambiako kwacha"
+      :symbol: ZMW

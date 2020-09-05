@@ -1,0 +1,654 @@
+--- 
+:sq: 
+  :currencies: 
+    :AED: 
+      :one: "dirham i Emirateve të Bashkuara Arabe"
+      :other: "dirhamë të Emirateve të Bashkuara Arabe"
+      :symbol: AED
+    :AFN: 
+      :one: "afgan afgan"
+      :other: "afganë afgan"
+      :symbol: AFN
+    :ALL: 
+      :one: "lek shqiptar"
+      :other: "lekë shqiptar"
+      :symbol: Lekë
+    :AMD: 
+      :one: "drami armene"
+      :other: "drami armene"
+      :symbol: AMD
+    :ANG: 
+      :one: "gilder antilian holandez"
+      :other: "gilderë antilian holandez"
+      :symbol: ANG
+    :AOA: 
+      :one: "kuanzë angole"
+      :other: "kuanza angole"
+      :symbol: AOA
+    :ARS: 
+      :one: "peso argjentinase"
+      :other: "peso argjentinase"
+      :symbol: ARS
+    :AUD: 
+      :one: "dollar australian"
+      :other: "dollarë australian"
+      :symbol: A$
+    :AWG: 
+      :one: "florin aruban"
+      :other: "florinë aruban"
+      :symbol: AWG
+    :AZN: 
+      :one: "manatë azerbajxhanase"
+      :other: "manata azerbajxhanase"
+      :symbol: AZN
+    :BAM: 
+      :one: "markë e Bosnjë-Hercegovinës [e shkëmbyeshme]"
+      :other: "marka të Bosnjë-Hercegovinës [të shkëmbyeshme]"
+      :symbol: BAM
+    :BBD: 
+      :one: "dollar barbadian"
+      :other: "dollarë barbadian"
+      :symbol: BBD
+    :BDT: 
+      :one: "takë bangladeshi"
+      :other: "taka bangladeshi"
+      :symbol: BDT
+    :BGN: 
+      :one: "levë bullgare"
+      :other: "leva bullgare"
+      :symbol: BGN
+    :BHD: 
+      :one: "dinar bahreini"
+      :other: "dinarë bahreini"
+      :symbol: BHD
+    :BIF: 
+      :one: "frangë burundiane"
+      :other: "franga burundiane"
+      :symbol: BIF
+    :BMD: 
+      :one: "dollar bermude"
+      :other: "dollarë bermude"
+      :symbol: BMD
+    :BND: 
+      :one: "dollar brunei"
+      :other: "dollarë brunei"
+      :symbol: BND
+    :BOB: 
+      :one: "bolivian i Bolivisë"
+      :other: "bolivianë të Bolivisë"
+      :symbol: BOB
+    :BRL: 
+      :one: "real brazilian"
+      :other: "realë brazilian"
+      :symbol: BRL
+    :BSD: 
+      :one: "dollar bahamez"
+      :other: "dollarë bahamez"
+      :symbol: BSD
+    :BTN: 
+      :one: "ngultrum butanez"
+      :other: "ngultrumë butanez"
+      :symbol: BTN
+    :BWP: 
+      :one: "pulë botsuane"
+      :other: "pula botsuane"
+      :symbol: BWP
+    :BYN: 
+      :one: "rubël bjelloruse"
+      :other: "rubla bjelloruse"
+      :symbol: BYN
+    :BYR: 
+      :one: "rubël bjelloruse (2000–2016)"
+      :other: "rubla bjelloruse (2000–2016)"
+      :symbol: BYR
+    :BZD: 
+      :one: "dollar belize"
+      :other: "dollarë belize"
+      :symbol: BZD
+    :CAD: 
+      :one: "dollar kanadez"
+      :other: "dollarë kanadez"
+      :symbol: CA$
+    :CDF: 
+      :one: "frangë kongole"
+      :other: "franga kongole"
+      :symbol: CDF
+    :CHF: 
+      :one: "frangë zvicerane"
+      :other: "franga zvicerane"
+      :symbol: CHF
+    :CLP: 
+      :one: "peso kiliane"
+      :other: "peso kiliane"
+      :symbol: CLP
+    :CNH: 
+      :one: "juan kinez (për treg të jashtëm)"
+      :other: "juanë kinez (për treg të jashtëm)"
+      :symbol: CNH
+    :CNY: 
+      :one: "juan kinez"
+      :other: "juanë kinez"
+      :symbol: CN¥
+    :COP: 
+      :one: "peso kolumbiane"
+      :other: "peso kolumbiane"
+      :symbol: COP
+    :CRC: 
+      :one: "kolon kostarikan"
+      :other: "kolonë kostarikan"
+      :symbol: CRC
+    :CUC: 
+      :one: "peso kubaneze e shkëmbyeshme"
+      :other: "peso kubaneze e shkëmbyeshme"
+      :symbol: CUC
+    :CUP: 
+      :one: "peso kubaneze"
+      :other: "peso kubaneze"
+      :symbol: CUP
+    :CVE: 
+      :one: "eskudo e Kepit të Gjelbër"
+      :other: "eskudo të Kepit të Gjelbër"
+      :symbol: CVE
+    :CZK: 
+      :one: "korunë çeke"
+      :other: "koruna çeke"
+      :symbol: CZK
+    :DJF: 
+      :one: "frangë xhibutiane"
+      :other: "franga xhibutiane"
+      :symbol: DJF
+    :DKK: 
+      :one: "koronë daneze"
+      :other: "korona daneze"
+      :symbol: DKK
+    :DOP: 
+      :one: "peso dominikane"
+      :other: "peso dominikane"
+      :symbol: DOP
+    :DZD: 
+      :one: "dinar algjerian"
+      :other: "dinarë algjerian"
+      :symbol: DZD
+    :EGP: 
+      :one: "sterlinë egjiptiane"
+      :other: "sterlina egjiptiane"
+      :symbol: EGP
+    :ERN: 
+      :one: "nakfë eritreje"
+      :other: "nakfa eritreje"
+      :symbol: ERN
+    :ESP: 
+      :symbol: ₧
+    :ETB: 
+      :one: "birë etiopiane"
+      :other: "bira etiopiane"
+      :symbol: ETB
+    :EUR: 
+      :one: euro
+      :other: euro
+      :symbol: €
+    :FJD: 
+      :one: "dollar fixhi"
+      :other: "dollarë fixhi"
+      :symbol: FJD
+    :FKP: 
+      :one: "stërlinë e Ishujve Falkland"
+      :other: "stërlina të Ishujve Falkland"
+      :symbol: FKP
+    :GBP: 
+      :one: "sterlinë britanike"
+      :other: "sterlina britanike"
+      :symbol: £
+    :GEL: 
+      :one: "lari gjeorgjian"
+      :other: "lari gjeorgjiane"
+      :symbol: GEL
+    :GHS: 
+      :one: "sejdë ganeze"
+      :other: "sejda ganeze"
+      :symbol: GHS
+    :GIP: 
+      :one: "sterlinë gjibraltari"
+      :other: "sterlina gjibraltari"
+      :symbol: GIP
+    :GMD: 
+      :one: "dalas gambian"
+      :other: "dalasë gambian"
+      :symbol: GMD
+    :GNF: 
+      :one: "frangë guineje"
+      :other: "franga guineje"
+      :symbol: GNF
+    :GTQ: 
+      :one: "kuecal guatemalas"
+      :other: "kuecalë guatemalas"
+      :symbol: GTQ
+    :GYD: 
+      :one: "dollar guajanez"
+      :other: "dollarë guajanez"
+      :symbol: GYD
+    :HKD: 
+      :one: "dollar hong-kongu"
+      :other: "dollarë hong-kongu"
+      :symbol: HK$
+    :HNL: 
+      :one: "lempirë hondurase"
+      :other: "lempira hondurase"
+      :symbol: HNL
+    :HRK: 
+      :one: "kunë kroate"
+      :other: "kuna kroate"
+      :symbol: HRK
+    :HTG: 
+      :one: "gurd haitian"
+      :other: "gurdë haitian"
+      :symbol: HTG
+    :HUF: 
+      :one: "forintë hungareze"
+      :other: "forinta hungareze"
+      :symbol: HUF
+    :IDR: 
+      :one: "rupi indoneziane"
+      :other: "rupi indoneziane"
+      :symbol: IDR
+    :ILS: 
+      :one: "shekel izrealit"
+      :other: "shekelë izrealit"
+      :symbol: ₪
+    :INR: 
+      :one: "rupi indiane"
+      :other: "rupi indiane"
+      :symbol: ₹
+    :IQD: 
+      :one: "dinar irakian"
+      :other: "dinarë irakian"
+      :symbol: IQD
+    :IRR: 
+      :one: "rial iranian"
+      :other: "rialë iranian"
+      :symbol: IRR
+    :ISK: 
+      :one: "koronë islandeze"
+      :other: "korona islandeze"
+      :symbol: ISK
+    :JMD: 
+      :one: "dollar xhamajkan"
+      :other: "dollarë xhamajkan"
+      :symbol: JMD
+    :JOD: 
+      :one: "dinar jordanez"
+      :other: "dinarë jordanez"
+      :symbol: JOD
+    :JPY: 
+      :one: "jen japonez"
+      :other: "jenë japonez"
+      :symbol: JP¥
+    :KES: 
+      :one: "shilingë keniane"
+      :other: "shilinga keniane"
+      :symbol: KES
+    :KGS: 
+      :one: "somë kirgize"
+      :other: "soma kirgize"
+      :symbol: KGS
+    :KHR: 
+      :one: "rial kamboxhian"
+      :other: "rialë kamboxhian"
+      :symbol: KHR
+    :KMF: 
+      :one: "frangë komore"
+      :other: "franga komori"
+      :symbol: KMF
+    :KPW: 
+      :one: "uon koreano-verior"
+      :other: "uonë koreano-verior"
+      :symbol: KPW
+    :KRW: 
+      :one: "uon koreano-jugor"
+      :other: "uonë koreano-jugor"
+      :symbol: ₩
+    :KWD: 
+      :one: "dinar kuvajtian"
+      :other: "dinarë kuvajtian"
+      :symbol: KWD
+    :KYD: 
+      :one: "dollar i Ishujve Kajman"
+      :other: "dollarë të Ishujve Kajman"
+      :symbol: KYD
+    :KZT: 
+      :one: "tengë kazake"
+      :other: "tenga kazake"
+      :symbol: KZT
+    :LAK: 
+      :one: "kipë laosi"
+      :other: "kipa laosi"
+      :symbol: LAK
+    :LBP: 
+      :one: "sterlinë libaneze"
+      :other: "sterlina libaneze"
+      :symbol: LBP
+    :LKR: 
+      :one: "rupi sri-lanke"
+      :other: "rupi sri-lanke"
+      :symbol: LKR
+    :LRD: 
+      :one: "dollar liberian"
+      :other: "dollarë liberian"
+      :symbol: LRD
+    :LTL: 
+      :one: "litë lituaneze"
+      :other: "lita lituaneze"
+      :symbol: LTL
+    :LVL: 
+      :one: "latë letoneze"
+      :other: "lata letoneze"
+      :symbol: LVL
+    :LYD: 
+      :one: "dinar libian"
+      :other: "dinarë libian"
+      :symbol: LYD
+    :MAD: 
+      :one: "dirham maroken"
+      :other: "dirhamë maroken"
+      :symbol: MAD
+    :MDL: 
+      :one: "leu moldave"
+      :other: "leu moldave"
+      :symbol: MDL
+    :MGA: 
+      :one: "arier malagez"
+      :other: "arierë malagez"
+      :symbol: MGA
+    :MKD: 
+      :one: "denar maqedonas"
+      :other: "denarë maqedonas"
+      :symbol: MKD
+    :MMK: 
+      :one: "kiatë mianmari"
+      :other: "kiata mianmari"
+      :symbol: MMK
+    :MNT: 
+      :one: "tugrikë mongole"
+      :other: "tugrika mongole"
+      :symbol: MNT
+    :MOP: 
+      :one: "patakë e Makaos"
+      :other: "pataka të Makaos"
+      :symbol: MOP
+    :MRO: 
+      :one: "ugijë mauritane (1973–2017)"
+      :other: "ugija mauritane (1973–2017)"
+      :symbol: MRO
+    :MRU: 
+      :one: "ugijë mauritane"
+      :other: "ugija mauritane"
+    :MUR: 
+      :one: "rupi mauritiane"
+      :other: "rupi mauritiane"
+      :symbol: MUR
+    :MVR: 
+      :one: "rufi maldivi"
+      :other: "rufi maldivi"
+      :symbol: MVR
+    :MWK: 
+      :one: "kuaçë malaviane"
+      :other: "kuaça malaviane"
+      :symbol: MWK
+    :MXN: 
+      :one: "peso meksikane"
+      :other: "peso meksikane"
+      :symbol: MX$
+    :MYR: 
+      :one: "ringit malajzian"
+      :other: "ringitë malajzian"
+      :symbol: MYR
+    :MZN: 
+      :one: "metikal mozambiku"
+      :other: "metikalë mozambiku"
+      :symbol: MZN
+    :NAD: 
+      :one: "dollar namibie"
+      :other: "dollarë namibie"
+      :symbol: NAD
+    :NGN: 
+      :one: "nairë nigeriane"
+      :other: "naira nigeriane"
+      :symbol: NGN
+    :NIO: 
+      :one: "kordobë nikaraguane"
+      :other: "kordoba nikaraguane"
+      :symbol: NIO
+    :NOK: 
+      :one: "koronë norvegjeze"
+      :other: "korona norvegjeze"
+      :symbol: NOK
+    :NPR: 
+      :one: "rupi nepaleze"
+      :other: "rupi nepaleze"
+      :symbol: NPR
+    :NZD: 
+      :one: "dollar i Zelandës së Re"
+      :other: "dollarë të Zelandës së Re"
+      :symbol: NZ$
+    :OMR: 
+      :one: "rial omani"
+      :other: "rialë omani"
+      :symbol: OMR
+    :PAB: 
+      :one: "balboa panameze"
+      :other: "balboa panameze"
+      :symbol: PAB
+    :PEN: 
+      :one: "solë peruane"
+      :other: "sola peruane"
+      :symbol: PEN
+    :PGK: 
+      :one: "kinë e Guinesë së Re-Papua"
+      :other: "kina të Guinesë së Re-Papua"
+      :symbol: PGK
+    :PHP: 
+      :one: "peso filipinase"
+      :other: "peso filipinase"
+      :symbol: PHP
+    :PKR: 
+      :one: "rupi pakistaneze"
+      :other: "rupi pakistaneze"
+      :symbol: PKR
+    :PLN: 
+      :one: "zllotë polake"
+      :other: "zllota polake"
+      :symbol: PLN
+    :PYG: 
+      :one: "guaran paraguaian"
+      :other: "guaranë paraguaian"
+      :symbol: PYG
+    :QAR: 
+      :one: "rial katari"
+      :other: "rialë katari"
+      :symbol: QAR
+    :RON: 
+      :one: "leu rumune"
+      :other: "leu rumune"
+      :symbol: RON
+    :RSD: 
+      :one: "dinar serb"
+      :other: "dinarë serb"
+      :symbol: RSD
+    :RUB: 
+      :one: "rubël ruse"
+      :other: "rubla ruse"
+      :symbol: RUB
+    :RUR: 
+      :symbol: р.
+    :RWF: 
+      :one: "frangë ruandeze"
+      :other: "franga ruandeze"
+      :symbol: RWF
+    :SAR: 
+      :one: "rial saudit"
+      :other: "rialë saudit"
+      :symbol: SAR
+    :SBD: 
+      :one: "dollar i Ishujve Solomonë"
+      :other: "dollarë të Ishujve Solomonë"
+      :symbol: SBD
+    :SCR: 
+      :one: "rupi e Ishujve Sishelë"
+      :other: "rupi të Ishujve Sishelë"
+      :symbol: SCR
+    :SDG: 
+      :one: "sterlinë sudaneze"
+      :other: "sterlina sudaneze"
+      :symbol: SDG
+    :SEK: 
+      :one: "koronë suedeze"
+      :other: "korona suedeze"
+      :symbol: SEK
+    :SGD: 
+      :one: "dollar singapori"
+      :other: "dollarë singapori"
+      :symbol: SGD
+    :SHP: 
+      :one: "sterlinë e Ishullit të Shën-Helenës"
+      :other: "sterlina e Ishullit të Shën-Helenës"
+      :symbol: SHP
+    :SLL: 
+      :one: "leon i Sierra-Leones"
+      :other: "leonë të Sierra-Leones"
+      :symbol: SLL
+    :SOS: 
+      :one: "shilingë somaleze"
+      :other: "shilinga somaleze"
+      :symbol: SOS
+    :SRD: 
+      :one: "dollar surinamez"
+      :other: "dollarë surinamez"
+      :symbol: SRD
+    :SSP: 
+      :one: "sterlinë sudanezo-jugore"
+      :other: "sterlina sudanezo-jugore"
+      :symbol: SSP
+    :STD: 
+      :one: "dobër e Sao-Tomes dhe Prinsipes (1977–2017)"
+      :other: "dobra të Sao-Tomes dhe Prinsipes (1977–2017)"
+      :symbol: STD
+    :STN: 
+      :one: "dobër e Sao-Tomes dhe Prinsipes"
+      :other: "dobra të Sao-Tomes dhe Prinsipes"
+      :symbol: STN
+    :SYP: 
+      :one: "sterlinë siriane"
+      :other: "sterlina siriane"
+      :symbol: SYP
+    :SZL: 
+      :one: "lilangen suazilande"
+      :other: "lilangenë suazilande"
+      :symbol: SZL
+    :THB: 
+      :one: "batë tajlandeze"
+      :other: "bata tajlandeze"
+      :symbol: ฿
+    :TJS: 
+      :one: "somonë taxhike"
+      :other: "somona taxhike"
+      :symbol: TJS
+    :TMT: 
+      :one: "manatë turkmene"
+      :other: "manata turkmene"
+      :symbol: TMT
+    :TND: 
+      :one: "dinar tunizian"
+      :other: "dinarë tunizian"
+      :symbol: TND
+    :TOP: 
+      :one: "pangë tongane"
+      :other: "panga tongane"
+      :symbol: TOP
+    :TRY: 
+      :one: "lirë turke"
+      :other: "lira turke"
+      :symbol: TRY
+    :TTD: 
+      :one: "dollar i Trinidadit dhe Tobagos"
+      :other: "dollarë të Trinidadit dhe Tobagos"
+      :symbol: TTD
+    :TWD: 
+      :one: "dollar tajvanez"
+      :other: "dollarë tajvanez"
+      :symbol: NT$
+    :TZS: 
+      :one: "shilingë tanzanie"
+      :other: "shilinga tanzanie"
+      :symbol: TZS
+    :UAH: 
+      :one: "rivni ukrainase"
+      :other: "rivni ukrainase"
+      :symbol: UAH
+    :UGX: 
+      :one: "shilingë ugandeze"
+      :other: "shilinga ugandeze"
+      :symbol: UGX
+    :USD: 
+      :one: "dollar amerikan"
+      :other: "dollarë amerikan"
+      :symbol: US$
+    :UYU: 
+      :one: "peso uruguaiane"
+      :other: "peso uruguaiane"
+      :symbol: UYU
+    :UZS: 
+      :one: "somë uzbeke"
+      :other: "soma uzbeke"
+      :symbol: UZS
+    :VEF: 
+      :one: "bolivar venezuelian (2008–2018)"
+      :other: "bolivarë venezuelian (2008–2018)"
+      :symbol: VEF
+    :VES: 
+      :one: "bolivar venezuelas"
+      :other: "bolivarë venezuelas"
+      :symbol: VES
+    :VND: 
+      :one: "dongë vietnameze"
+      :other: "donga vietnameze"
+      :symbol: ₫
+    :VUV: 
+      :one: "vatu vanuatuje"
+      :other: "vatu vanuatuje"
+      :symbol: VUV
+    :WST: 
+      :one: "talë samoane"
+      :other: "tala samoane"
+      :symbol: WST
+    :XAF: 
+      :one: "frangë kamerunase"
+      :other: "franga kamerunase"
+      :symbol: FCFA
+    :XCD: 
+      :one: "dollar i Karaibeve Lindore"
+      :other: "dollarë të Karaibeve Lindore"
+      :symbol: EC$
+    :XOF: 
+      :one: "frangë e Bregut të Fildishtë"
+      :other: "franga të Bregut të Fildishtë"
+      :symbol: CFA
+    :XPF: 
+      :one: "frangë franceze e Polinezisë"
+      :other: "franga franceze të Polinezisë"
+      :symbol: CFPF
+    :XXX: 
+      :one: "(njësi e panjohur valutore)"
+      :other: "(njësi të panjohura valutore)"
+      :symbol: ¤
+    :YER: 
+      :one: "rial jemeni"
+      :other: "rialë jemeni"
+      :symbol: YER
+    :ZAR: 
+      :one: "rand afrikano-jugor"
+      :other: "randë afrikano-jugor"
+      :symbol: ZAR
+    :ZMW: 
+      :one: "kuaçë zambiku"
+      :other: "kuaça zambiku"
+      :symbol: ZMW
