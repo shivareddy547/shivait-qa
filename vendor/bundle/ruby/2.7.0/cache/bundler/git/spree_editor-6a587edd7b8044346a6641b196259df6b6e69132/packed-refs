@@ -1,0 +1,14 @@
+# pack-refs with: peeled fully-peeled sorted 
+f425b04e864953fc9bc2b6cbf177211106c1641d refs/heads/0-70-x
+10126b29f07ec4f96db075710ca2fedf98997298 refs/heads/1-3-stable
+f0a9d682115bd96bf873487a6543fdd7c4ac4819 refs/heads/2-0-stable
+c4eafda7ff48b65454676d71ede24d7a7b545504 refs/heads/2-1-stable
+378f2811a356a0daed6e3df041e4de65f6276001 refs/heads/2-2-stable
+a0c7dee3cd2f8310f00b3594d5bfd0f13b16134c refs/heads/2-3-stable
+600274016c1b963507347f1d6e87dd1a81ef0b65 refs/heads/2-4-stable
+00c3db2d06f659e4bb7e600c62ef14e3c7158263 refs/heads/3-0-stable
+702db404e959d6c4fa42fc7c7ea48a28f6bd2d1e refs/heads/3-1-stable
+4f4d28b32b4f0ebfae73ae858f6b49a911b1d3d3 refs/heads/fixing-issues-with-0-70
+58c3634918ab4adb1759892aba3d10e6daf2a31b refs/heads/master
+188faa9ce56bdb6069a01984d9a4ccd441bbae11 refs/heads/rails_6_spree_4
+3218578b6fd19dab48e3f1b512810f3f5c8f0092 refs/heads/update_spree_dependencies
