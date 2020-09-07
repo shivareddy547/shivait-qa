@@ -81,3 +81,4 @@ gem "mini_magick"
 # gem 'spree_editor', github: 'spree-contrib/spree_editor'
 gem 'coffee-script'
 # gem "mini_magick"
+gem 'spree_static_content', github: 'spree-contrib/spree_static_content'
