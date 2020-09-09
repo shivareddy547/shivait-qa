@@ -16,7 +16,7 @@ module Spree
 <% end -%>
 <% attributes.each do |attribute| -%>
 <% if attribute.type == :image -%>
-    has_attached_file :<%= attribute.name %>,
+    has_one_attached :<%= attribute.name %>,
                       styles: { large: '600x600>' },
                       default_style: :large,
                       url: '/spree/<%= plural_name %>/:id/:style/:basename.:extension',
@@ -26,7 +26,7 @@ module Spree
     validates_attachment :<%= attribute.name %>, content_type: { content_type: /\Aimage\/.*\Z/ }
 
 <% elsif attribute.type == :file -%>
-    has_attached_file :<%= attribute.name %>,
+  has_one_attached :<%= attribute.name %>,
                       url: '/spree/<%= plural_name %>/:id/:basename.:extension',
                       path: ':rails_root/public/spree/<%= plural_name %>/:id/:basename.:extension'
 
