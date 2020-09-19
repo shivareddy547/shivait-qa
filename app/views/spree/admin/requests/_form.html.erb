@@ -1,0 +1,22 @@
+<div data-hook="admin_request_form_fields" class="row">
+  <div class="col-md-6">
+    <%= f.field_container :status, class: ['form-group'] do %>
+      <%= f.label :status %>
+      <%= f.text_field :status, class: 'form-control' %>
+      <%= error_message_on :request, :status %>
+    <% end %>
+
+    <%= f.field_container :product_id, class: ['form-group'] do %>
+      <%= f.label :product_id %>
+      <%= f.number_field :product_id, class: 'form-control' %>
+      <%= error_message_on :request, :product_id %>
+    <% end %>
+
+    <%= f.field_container :user_id, class: ['form-group'] do %>
+      <%= f.label :user_id %>
+      <%= f.number_field :user_id, class: 'form-control' %>
+      <%= error_message_on :request, :user_id %>
+    <% end %>
+
+  </div>
+</div>

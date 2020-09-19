@@ -1,0 +1,29 @@
+<% content_for :page_title do %>
+  <%= Spree.t(:listing_requests) %>
+<% end %>
+
+<% content_for :page_actions do %>
+  <%= button_link_to Spree.t(:new_request), new_object_url, class: 'btn-success', icon: 'add', id: 'admin_new_request_link' %>
+<% end if can?(:create, Spree::Request) %>
+
+<table class="table" id="listing_requests" data-hook>
+  <thead>
+    <tr data-hook="admin_requests_index_headers">
+      <th><%= t(:status, scope: 'activerecord.attributes.spree/request') %></th>
+      <th data-hook="admin_requests_index_header_actions" class="actions"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @requests.each do |request| %>
+      <tr id="<%= spree_dom_id request %>" data-hook="admin_requests_index_rows" class="<%= cycle('odd', 'even')%>">
+        <td><%= link_to request.status, edit_object_url(request) %></td>
+        <td data-hook="admin_requests_index_row_actions" class="actions text-right">
+          <%= link_to_edit request, no_text: true %>
+          <%= link_to_delete request, no_text: true %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= paginate @requests %>

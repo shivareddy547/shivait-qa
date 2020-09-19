@@ -11,6 +11,7 @@
   </head>
   <body class="<%= body_class %>" id="<%= @body_id || 'default' %>" data-hook="body">
     <%= render partial: 'spree/shared/header' %>
+    <%= flash_messages %>
   <% if request.original_fullpath == "/"%>
     <div id="homepage-banner-desktop" class="carousel slide  homepage-carousel" data-interval="false">
       <div class="carousel-inner carousel-inner-width">
@@ -34,7 +35,7 @@
 
           </div>
         </div>
-        <div class="carousel-item ">
+        <div class="carousel-item ">h
           <div class="container1 position-relative">
 
             <div class="row carousel-items-container">
@@ -90,7 +91,7 @@
 
     <div data-hook>
       <main id="content" data-hook>
-        <%= flash_messages %>
+
         <%= yield %>
       </main>
 

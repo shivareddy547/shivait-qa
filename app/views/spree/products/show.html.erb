@@ -14,7 +14,34 @@
             <%= @product.name %>
           </h1>
           <div id="cart-form" data-hook="cart_form">
-            <%= render 'cart_form', variant_change_identifier: 'productCarousel' %>
+            <%#= render 'cart_form', variant_change_identifier: 'productCarousel' %>
+<!--            <a href="" class="" data-toggle="modal" data-target="#modalLoginForm" style="color:#007bff"> Enroll</a>-->
+            <%#= link_to 'Enrollnroll', {controller:'spree/request', action: 'requestenroll', product_id: @product.id, user_id: spree_current_user.id},style: "color:#007bff" %>
+
+            <% if spree_current_user.present?  %>
+              <% @pending= Spree::Request.where(product_id: @product.id, user_id:spree_current_user.id).first%>
+              <%if @pending %>
+                <!--    <p class="card-text"><%#= 'Pending' %></p>-->
+                <li class="list-group-item">Status : <%= 'Pending' %></li>
+                <%#= get_request_status(@product.id) %>
+              <%elsif  get_request_status(@product).present? %>
+                <!--    <p>%='Enrolled'%></p>-->
+                <li class="list-group-item">Status : <%= 'Enrolled' %></li>
+              <%else%>
+                <li class="list-group-item">Status :
+                  <%= link_to "Enroll", requestenroll_path(product_id: @product.id, user_id: spree_current_user.id), :method => :post ,style: "color:#007bff"%>
+
+                  <%#= link_to 'Enroll', {controller:'request', action: 'requestenroll', course_id: course, user_id: @current_user},style: "color:#007bff" %>
+                </li>
+              <%end%>
+            <% else %>
+              <%#= link_to 'Enroll', {controller:'request', action: 'requestenroll', course_id: course, user_id: @current_user},style: "color:#007bff" %>
+              <li class="list-group-item"><a href="" class="" data-toggle="modal" data-target="#modalLoginForm" style="color:#007bff"> Enroll</a></li>
+            <%end%>
+            <%#= link_to "Improve Your Ruby Skills", requests_path %>
+            <%#= link_tonk_to "Get More Books", requests_path, class: "index-link" %>
+
+            <a href="/login" class="" > <i class="ti-user"></i>Login</a>
           </div>
         </div>
       </div>
