@@ -1,3 +1,5 @@
+<% item_count = simple_current_order&.item_count || 0 %>
+
 
 <% if !spree_current_user.present? %>
 <ul>
@@ -5,18 +7,27 @@
     <a href="/login" class="" > <i class="ti-user"></i>Login</a>
   </li>
   <li><a href="/signup" class="" ><i class="ti-lock"></i>Register</a></li>
+  <li>
+    <%= render 'spree/shared/cart', class: 'd-inline-block cart-icon', size: 36, item_count: item_count %>
+
+  </li>
 </ul>
 <% else %>
 
   <div class="dropdown">
     <a href="" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle" data-toggle="modal" type="button"><i class="ti-user"></i><%= spree_current_user.email.capitalize %> </a>
     <div class="dropdown-menu submenu" aria-labelledby="dropdownMenuButton">
-      <%= link_to "Profile", spree_current_user,:class=>"dropdown-item" %>
+      <%= link_to "Profile", account_path,:class=>"dropdown-item" %>
       <%= link_to "Log out", logout_path, method: "get",:class=>"dropdown-item" %>
       <!--      <a class="dropdown-item" href="#">Another action</a>-->
       <!--      <a class="dropdown-item" href="#">Something else here</a>-->
+      <li>
+        <%= render 'spree/shared/cart', class: 'd-inline-block cart-icon', size: 36, item_count: item_count %>
+
+      </li>
     </div>
   </div>
+
 
 
 <% end %>
