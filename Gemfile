@@ -84,3 +84,6 @@ gem 'coffee-script'
 gem 'spree_static_content', github: 'spree-contrib/spree_static_content'
 
 gem 'spree_editor', github: 'shivareddy547/spree_editor'
+
+# gem 'turbolinks'
+# gem 'jquery-turbolinks'
