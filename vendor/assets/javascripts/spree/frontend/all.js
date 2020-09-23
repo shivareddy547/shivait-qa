@@ -30,8 +30,7 @@
 //= require spree/frontend/new_design/main
 
 
-
-
+//= require popper
 
 //= require spree
 //= require polyfill.min
@@ -68,7 +67,7 @@
 
 //= require spree/frontend/spree4.2/turbolinks_scroll_fix
 
-
+//= require spree/frontend/spree4.2/custom
 
 Spree.routes.api_tokens = Spree.pathFor('api_tokens')
 Spree.routes.ensure_cart = Spree.pathFor('ensure_cart')

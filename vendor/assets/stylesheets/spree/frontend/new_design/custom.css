@@ -8,3 +8,34 @@
 p.homepage-carousel-text a.list-group-item{
     color: blueviolet !important;
 }
+
+.homepage_products{
+    margin-top: 10%;
+}
+
+.carousel-icon-control--next.home-banner span.carousel-icon-control-rounded{
+    margin-top: 277%;
+}
+
+.nav-right-links-search{
+    margin-top: -22%;
+    margin-right: 3%;
+}
+.nav-right-links-cart{
+    margin-top: -26%;
+    margin-right: 16%;
+}
+
+.above-overlay {
+    opacity: 0.1;
+
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+}
