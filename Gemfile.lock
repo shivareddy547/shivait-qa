@@ -37,6 +37,13 @@ PATH
       spree_core (= 4.1)
 
 PATH
+  remote: spree_mail_settings
+  specs:
+    spree_mail_settings (4.1.0)
+      spree_auth_devise (>= 4.1.0)
+      spree_backend (>= 4.1.0)
+
+PATH
   remote: spree_scaffold
   specs:
     spree_scaffold (3.0.0)
@@ -488,6 +495,7 @@ DEPENDENCIES
   spree_cloudinary!
   spree_editor!
   spree_gateway (~> 3.7)
+  spree_mail_settings!
   spree_scaffold!
   spree_static_content!
   spring

@@ -85,5 +85,6 @@ gem 'spree_static_content', github: 'spree-contrib/spree_static_content'
 
 gem 'spree_editor', github: 'shivareddy547/spree_editor'
 
+gem 'spree_mail_settings',:path=>"spree_mail_settings"
 # gem 'turbolinks'
-# gem 'jquery-turbolinks'
+# gem 'jquery-tgit urbolinks'
