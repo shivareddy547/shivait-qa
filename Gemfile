@@ -88,3 +88,4 @@ gem 'spree_editor', github: 'shivareddy547/spree_editor'
 gem 'spree_mail_settings',:path=>"spree_mail_settings"
 # gem 'turbolinks'
 # gem 'jquery-tgit urbolinks'
+gem 'spree_contact_us', github: 'spree-contrib/spree_contact_us'

@@ -30,4 +30,30 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  spree:
+    activemodel:
+      attributes:
+        contact_us/contact:
+          name: "Name"
+          email: "Email"
+          message: "Message"
+          subject: "Subject"
+    contact_us_title: "Contact Us"
+    send: Send
+    sent_by_contact_form: "Sent by contact form from %{email}"
+    sent_by_name: "Sent by %{name} from %{email}"
+    subject: "Contact Us message from %{email}"
+    submit: "Submit"
+
+    spree_contact_us:
+      address_line1: Hyderadad
+      address_line2: ""
+      call_us: Call us now
+      call_us_number: +919790918533
+      email: Email
+      header: Please contact us if you need any details about Courses slots or details
+      left_title: Contact Us
+      message_placeholder: Message
+      notices:
+        success: "Contact email was successfully sent."
+
