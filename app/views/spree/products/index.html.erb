@@ -29,10 +29,7 @@
               <div class="product-component-name" title=" <%= each_p.name %>">
                 <%= each_p.name %>
               </div>
-              <div class="product-component-price">
-                <%#= each_p.description.truncate(400, separator: /\s/) %>
-                <%#= sanitize product_description(each_p).truncate(300) %>
-              </div>
+              <div class="product-component-price"> <%= each_p.price %> <%= each_p.cost_currency %> </div>
             </div>
           </a>
         </div>

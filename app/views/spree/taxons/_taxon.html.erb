@@ -96,34 +96,12 @@
                       <div class="product-component-name" title="<%= product.name %>">
                         <%= product.name %>
                       </div>
-<!--                      <div class="product-component-price">$26.99</div>-->
-                      <br>
-                      <% if spree_current_user.present?  %>
-                        <% @pending= Spree::Request.where(product_id: product.id, user_id:spree_current_user.id).first%>
-                        <%if @pending %>
-                          <!--    <p class="card-text"><%#= 'Pending' %></p>-->
-                         Status : <span style="color: red"><%= 'Pending' %></span>
-                          <%#= get_request_status(@product.id) %>
-                        <%elsif  get_request_status(product).present? %>
-                          <!--    <p>%='Enrolled'%></p>-->
-                          Status : <%= 'Enrolled' %>
-                        <%else%>
-                          Status :
-                            <%= link_to "Enroll", requestenroll_path(product_id: product.id, user_id: spree_current_user.id), :method => :post ,style: "color:#007bff"%>
+                      <div class="product-component-price"> <%= product.price %> <%= product.cost_currency %> </div>
 
-                            <%#= link_to 'Enroll', {controller:'request', action: 'requestenroll', course_id: course, user_id: @current_user},style: "color:#007bff" %>
 
-                        <%end%>
-                      <% else %>
-                        <%#= link_to 'Enroll', {controller:'request', action: 'requestenroll', course_id: course, user_id: @current_user},style: "color:#007bff" %>
-                        <li class="list-group-item"><a href="" class="" data-toggle="modal" data-target="#modalLoginForm" style="color:#007bff"> Enroll</a></li>
-                      <%end%>
                     </div>
 
                     </div>
-
-
-
                 </div>
                 <% end  %>
               </div>

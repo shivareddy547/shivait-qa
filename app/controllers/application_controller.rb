@@ -6,8 +6,10 @@ class ApplicationController < ActionController::Base
   include Spree::Core::ControllerHelpers::Order
   include Spree::Core::ControllerHelpers::Store
   include Spree::FrontendHelper
+  include Spree::AddressesHelper
   helper 'spree/base'
   helper 'spree/frontend'
+  helper 'spree/addresses'
 
 
 

@@ -13,6 +13,7 @@ Spree.config do |config|
 
   config.admin_interface_logo = 'logo/logo.png'
   config.logo = 'logo/logo.png'
+  config.currency="INR"
 
   # Example:
   # Uncomment to stop tracking inventory levels in the application
@@ -35,3 +36,4 @@ end
 # Spree::Api::Dependencies.storefront_cart_serializer = 'MyRailsApp::CartSerializer'
 
 Spree.user_class = "Spree::User"
+Spree::Address::ADDRESS_FIELDS = %w(firstname lastname company address1 address2 city country state zipcode  phone)
