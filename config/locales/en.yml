@@ -57,3 +57,6 @@ en:
       notices:
         success: "Contact email was successfully sent."
 
+      spree_homepage:
+        online_training: Online Training
+        enroll_now: Enroll Now
