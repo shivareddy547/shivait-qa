@@ -62,3 +62,8 @@ p.homepage-carousel-text a.list-group-item{
 
 
 }
+@media only screen and (max-width: 800px)  {
+    .enroll_button_home {
+        display: none;
+    }
+}

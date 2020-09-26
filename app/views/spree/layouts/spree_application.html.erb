@@ -42,7 +42,7 @@
                   <div class="homepage-hero-image-text mb-2 mx-auto pb-3 pb-md-4">
                     <%= Spree.t('homepage.online_training') %>
                   </div>
-                  <div>
+                  <div class="enroll_button_home">
                     <%= link_to Spree.t('homepage.enroll_now'), spree.products_path, class: 'btn btn-primary spree-btn px-5' %>
                   </div>
                 </div>
@@ -66,7 +66,7 @@
                   <div class="homepage-hero-image-text mb-2 mx-auto pb-3 pb-md-4">
                     <%= Spree.t('homepage.online_training') %>
                   </div>
-                  <div>
+                  <div class="enroll_button_home">
                     <%= link_to Spree.t('homepage.enroll_now'), spree.products_path, class: 'btn btn-primary spree-btn px-5' %>
                   </div>
                 </div>
@@ -74,28 +74,28 @@
             </div>
           </div>
         </div>
-<!--        <div class="carousel-item ">-->
-<!--          <div class="container1 position-relative">-->
+        <div class="carousel-item ">
+          <div class="container1 position-relative">
 
-<!--            <div class="row carousel-items-container">-->
-<!--              <div class="homepage-hero-image mb-3 position-relative">-->
-<!--                <img class="lazyload hero-image position-absolute"-->
-<!--                     data-src="<%#= asset_path('/assets/banners/ruby/main_banner') %>"-->
-<!--                     data-srcset="<%#= image_source_set('/assets/banners/ruby/main_banner') %>"-->
-<!--                     alt="<%#= Spree.t('homepage.summer_collection')%>" />-->
+            <div class="row carousel-items-container">
+              <div class="homepage-hero-image mb-3 position-relative">
+                <img class="lazyload hero-image position-absolute"
+                     data-src="<%= asset_path('/assets/banners/cloud/cloud_banner') %>"
+                     data-srcset="<%= image_source_set('/assets/banners/cloud/cloud_banner') %>"
+                     alt="<%= Spree.t('homepage.online_training')%>" />
 
-<!--                <div class="hero-content">-->
-<!--                  <div class="homepage-hero-image-text mb-2 mx-auto pb-3 pb-md-4">-->
-                    <%#= Spree.t('homepage.summer_collection') %>
-<!--                  </div>-->
-<!--                  <div>-->
-                    <%#= link_to Spree.t('homepage.shop_now'), spree.products_path, class: 'btn btn-primary spree-btn px-5' %>
-<!--                  </div>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div>-->
+                <div class="hero-content">
+                  <div class="homepage-hero-image-text mb-2 mx-auto pb-3 pb-md-4">
+                    <%= Spree.t('homepage.online_training') %>
+                  </div>
+                  <div class="enroll_button_home">
+                    <%= link_to Spree.t('homepage.enroll_now'), spree.products_path, class: 'btn btn-primary spree-btn px-5' %>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <a class="d-flex position-absolute justify-content-center align-items-center carousel-icon-control carousel-icon-control--previous" href="#homepage-banner-desktop" role="button" data-slide="prev">
               <span class="d-flex justify-content-center align-items-center carousel-icon-control-rounded" aria-hidden="true">
