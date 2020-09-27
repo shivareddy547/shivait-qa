@@ -6,18 +6,8 @@ module Spree
     end
 
     def plp_and_carousel_image(product, image_class = '')
-      Rails.logger.info "333333333333333333333333333333333333333"
-      p 3333333333333333333333333333333333333333333
       image = default_image_for_product_or_variant(product)
-      p image
-      p 44444444444444444444444444444444444
-      Rails.logger.info "44444444444444444444444444444444444444444"
-      image_url = if image.present?
-                    main_app.url_for(image.url('plp'))
-                  else
-                    asset_path('noimage/plp.png')
-                  end
-
+      image_url = image&.plp_url || asset_path('noimage/plp.png')
       image_style = image&.style(:plp)
 
       lazy_image(
