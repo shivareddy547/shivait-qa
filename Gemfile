@@ -90,6 +90,7 @@ gem 'spree_mail_settings',:github=>"shivareddy547/spree_mail_settings_4.2"
 # gem 'jquery-tgit urbolinks'
 gem 'spree_contact_us', github: 'spree-contrib/spree_contact_us'
 
-gem 'spree_social_products', github: 'shivareddy547/spree_social_products_4.2'
+# gem 'spree_social_products', github: 'shivareddy547/spree_social_products_4.2'
+gem 'spree_social_products', path: 'spree_social_products'
 # gem 'spree_favorite_products', github: 'vinsol-spree-contrib/spree_favorite_products'
 #
