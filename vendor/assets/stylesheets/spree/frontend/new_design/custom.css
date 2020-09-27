@@ -9,9 +9,7 @@ p.homepage-carousel-text a.list-group-item{
     color: blueviolet !important;
 }
 
-.homepage_products{
-    margin-top: 10%;
-}
+
 
 .carousel-icon-control--next.home-banner span.carousel-icon-control-rounded{
     margin-top: 277%;
@@ -65,6 +63,9 @@ p.homepage-carousel-text a.list-group-item{
 @media only screen and (max-width: 800px)  {
     .enroll_button_home {
         display: none;
+    }
+    .homepage_products{
+        margin-top: 2%;
     }
 }
 
