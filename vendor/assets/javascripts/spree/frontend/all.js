@@ -79,3 +79,4 @@ Spree.routes.product_carousel = function (taxonId) { return Spree.pathFor('produ
 //=require("turbolinks").start()
 
 
+//= require spree/frontend/spree_social_products

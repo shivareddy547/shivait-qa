@@ -89,3 +89,7 @@ gem 'spree_mail_settings',:path=>"spree_mail_settings"
 # gem 'turbolinks'
 # gem 'jquery-tgit urbolinks'
 gem 'spree_contact_us', github: 'spree-contrib/spree_contact_us'
+
+gem 'spree_social_products', path: 'spree_social_products'
+# gem 'spree_favorite_products', github: 'vinsol-spree-contrib/spree_favorite_products'
+#

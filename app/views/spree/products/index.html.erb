@@ -20,7 +20,7 @@
     <div class="col-md-12 col-lg-9 homepage_products" data-hook="homepage_products">
       <%= paginate @products, theme: 'twitter-bootstrap-4' %>
 
-      <div class="row">
+      <div class="row taxon_products">
         <% @products.each do |each_p| %>
         <div id="product_<%= each_p.id %>>" class="col-sm-4 col-6 mb-3 mb-md-4 pr-sm-0 pr-md-0 pl-md-4 pl-sm-4 pl-0 pr-2">
           <a class="h-80 d-flex flex-column justify-content-between" href="/products/<%= each_p.slug %>?taxon_id=<%= @taxon.present? ? each_p.taxons.first.id : @taxon %>">
@@ -38,7 +38,7 @@
       </div>
 
       <div class="row pl-md-4 pl-sm-4">
-        <div class="col-12">
+        <div class="col-12 pagination_bottom">
           <div class="plp-pagination d-none d-lg-flex">
             <ul class="pagination mt-4 ">
               <% if @products.respond_to?(:total_pages) %>

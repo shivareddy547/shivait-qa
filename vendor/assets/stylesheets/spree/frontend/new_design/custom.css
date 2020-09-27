@@ -67,3 +67,13 @@ p.homepage-carousel-text a.list-group-item{
         display: none;
     }
 }
+
+.shopping-cart-empty{
+    margin-bottom: 10%;
+}
+.pagination_bottom{
+    margin-bottom: 10%;
+}
+.taxon_products{
+    margin: 3% 3% 3% 3%;
+}

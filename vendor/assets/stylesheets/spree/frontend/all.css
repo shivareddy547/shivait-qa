@@ -26,4 +26,5 @@
  *= require spree/frontend/spree_admin_roles_and_access
 
  *= require spree/frontend/spree_static_content
+ *= require spree/frontend/spree_social_products
 */
