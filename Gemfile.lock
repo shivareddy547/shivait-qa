@@ -29,6 +29,13 @@ GIT
       spree_backend (>= 4.1.0)
 
 GIT
+  remote: https://github.com/shivareddy547/spree_social_products_4.2.git
+  revision: 970d90ebd5dcf0c5c8e735088a14313b45e900a7
+  specs:
+    spree_social_products (2.0.0)
+      spree_core (~> 4.1.0)
+
+GIT
   remote: https://github.com/spree-contrib/spree_contact_us.git
   revision: 9bacb32536eb1d78bd287e7725030463faed97c1
   specs:
@@ -57,12 +64,6 @@ PATH
   specs:
     spree_scaffold (3.0.0)
       spree_core (~> 4.1)
-
-PATH
-  remote: spree_social_products
-  specs:
-    spree_social_products (2.0.0)
-      spree_core (~> 4.1.0)
 
 GEM
   remote: https://rubygems.org/
