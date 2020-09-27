@@ -85,11 +85,11 @@ gem 'spree_static_content', github: 'spree-contrib/spree_static_content'
 
 gem 'spree_editor', github: 'shivareddy547/spree_editor'
 
-gem 'spree_mail_settings',:path=>"spree_mail_settings"
+gem 'spree_mail_settings',:github=>"shivareddy547/spree_mail_settings_4.2"
 # gem 'turbolinks'
 # gem 'jquery-tgit urbolinks'
 gem 'spree_contact_us', github: 'spree-contrib/spree_contact_us'
 
-gem 'spree_social_products', path: 'spree_social_products'
+gem 'spree_social_products', github: 'shivareddy547/spree_social_products_4.2'
 # gem 'spree_favorite_products', github: 'vinsol-spree-contrib/spree_favorite_products'
 #
