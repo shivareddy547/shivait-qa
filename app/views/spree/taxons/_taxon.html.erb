@@ -18,7 +18,7 @@
 
     <% else %>
 
-      <div id="taxon-<%= taxon.try(:id) %>" class="carousel slide d-md-none homepage-carousel" data-interval="false">
+      <div id="taxon-<%= taxon.try(:id) %>" class="carousel slide d-md-none homepage-carousel" data-interval="8000">
         <div class="carousel-inner">
           <% taxon.products.each_with_index do | product,index|  %>
             <% url = spree.product_path(product, taxon_id: taxon.try(:id)) %>
@@ -64,7 +64,7 @@
         </a>
       </div>
 
-      <div id="trending-desktop-<%= taxon.try(:id) %>" class="carousel slide d-none d-md-block homepage-carousel" data-interval="false">
+      <div id="trending-desktop-<%= taxon.try(:id) %>" class="carousel slide d-none d-md-block homepage-carousel" data-interval="3000">
         <% i=0 %>
         <div class="carousel-inner carousel-inner-width">
           <% taxon.products.each_slice(3) do | product_slice|  %>
