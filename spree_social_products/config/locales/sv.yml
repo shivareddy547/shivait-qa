@@ -1,0 +1,24 @@
+---
+sv:
+  spree:
+    social:
+      bookmark_or_share_this: Bokmärk eller dela detta
+      social_sharing_buttons_description: Lägg till sociala dela knappar på produktsidorna
+      social_sharing_settings_description: Aktivera eller inaktivera delning till dessa nätverk på produktsidorna
+      social_sharing_settings_updated: Dela inställningarna har uppdaterats.
+      settings: Sociala delningsinställningar
+      service_settings: Serviceinställningar
+      facebook_settings: Facebookinställningar
+      buttons:
+        delicious: Delicious
+        submit_to_reddit: Dela på Reddit
+        share_on_tumblr: Dela på Tumblr
+        tweet: Tvittra
+      preferences:
+        service_button: '%{service} knapp'
+        facebook_layout: Knapptyp
+        facebook_id: Facebook Api ID
+        facebook_show_faces: Visa ansikten för Facebook
+        facebook_verb_to_display: Verb att visa
+        facebook_color_scheme: Färgschema
+        facebook_send_button: Dela knapp

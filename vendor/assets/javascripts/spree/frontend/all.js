@@ -80,3 +80,4 @@ Spree.routes.product_carousel = function (taxonId) { return Spree.pathFor('produ
 
 
 //= require spree/frontend/spree_social_products
+//= require spree/frontend/add_to_cart_analytics

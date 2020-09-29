@@ -1,0 +1,16 @@
+---
+# Too picky.
+Metrics/LineLength:
+  Enabled: false
+
+# This should truly be on for well documented gems.
+Style/Documentation:
+  Enabled: false
+
+# Neatly aligned code is too swell.
+Style/SingleSpaceBeforeFirstArg:
+  Enabled: false
+
+# Avoid contradictory style rules by enforce single quotes.
+Style/StringLiterals:
+  EnforcedStyle: single_quotes

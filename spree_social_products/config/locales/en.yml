@@ -1,0 +1,25 @@
+---
+en:
+  spree:
+    social:
+      bookmark_or_share_this: Bookmark or Share this
+      social_sharing_settings_description: Enable or disable sharing to these networks on product pages
+      social_sharing_settings_updated: Sharing settings have been successfully updated.
+      settings: Social Sharing Settings
+      service_settings: Service Settings
+      facebook_settings: Facebook Settings
+      twitter_settings: Twitter Settings
+      buttons:
+        delicious: Delicious
+        submit_to_reddit: Submit to Reddit
+        share_on_tumblr: Share on Tumblr
+        tweet: Tweet
+      preferences:
+        service_button: '%{service} Button'
+        facebook_layout: Button Type
+        facebook_app_id: Facebook App ID
+        facebook_show_faces: Show Faces Facebook
+        facebook_verb_to_display: Verb to Display
+        facebook_color_scheme: Color Scheme
+        facebook_send_button: Share button
+        twitter_id: Twitter ID

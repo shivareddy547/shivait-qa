@@ -36,6 +36,16 @@ GIT
       spree_core (~> 4.1.0)
 
 GIT
+  remote: https://github.com/spree-contrib/spree_analytics_trackers.git
+  revision: c4afa8ba0755a5d06277562775a8affd3c9fee87
+  specs:
+    spree_analytics_trackers (2.0.0)
+      deface (~> 1.0)
+      spree_backend (>= 4.1.0, < 5.0)
+      spree_core (>= 4.1.0, < 5.0)
+      spree_extension
+
+GIT
   remote: https://github.com/spree-contrib/spree_contact_us.git
   revision: 9bacb32536eb1d78bd287e7725030463faed97c1
   specs:
@@ -507,6 +517,7 @@ DEPENDENCIES
   selenium-webdriver
   spree (~> 4.1)
   spree_admin_roles_and_access!
+  spree_analytics_trackers!
   spree_auth_devise (~> 4.1)
   spree_cloudinary!
   spree_contact_us!
