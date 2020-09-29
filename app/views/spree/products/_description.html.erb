@@ -1,10 +1,10 @@
 <h3 class="pt-4 font-weight-bold text-uppercase product-details-subtitle"><%= Spree.t(:description) %></h3>
 <div id="product-description-short" class="m-0 text-break product-description" data-hook="description">
-  <%= sanitize product_description(@product).truncate(450) %>
+  <%= sanitize product_description(@product).truncate(450).html_safe %>
 </div>
 
 <div id="product-description-long" class="m-0 text-break product-description d-none" data-hook="description">
-  <%= sanitize product_description(@product) %>
+  <%= sanitize product_description(@product).html_safe %>
 </div>
 
 <% if product_description(@product).length > 450 %>
