@@ -14,6 +14,10 @@
 Spree::AppConfiguration.class_eval do
 
 
+  #Logo update
+  preference :logo, :string, default: 'logo.png'
+  preference :mailer_logo, :string, default: 'logo.png'
+
   # Default mail headers settings
   preference :mails_from, :string, default: 'spree@example.com'
   preference :enable_mail_delivery, :boolean, default: false
