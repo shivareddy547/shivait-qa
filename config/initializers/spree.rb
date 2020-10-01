@@ -65,4 +65,4 @@ end
 # Spree::Api::Dependencies.storefront_cart_serializer = 'MyRailsApp::CartSerializer'
 
 Spree.user_class = "Spree::User"
-Spree::Address::ADDRESS_FIELDS = %w(firstname lastname company address1 address2 city country state zipcode  phone)
+# Spree::Address::ADDRESS_FIELDS = %w(firstname lastname company address1 address2 city country state zipcode  phone)
