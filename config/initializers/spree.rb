@@ -40,8 +40,8 @@ end
 
 Spree.config do |config|
 
-  config.admin_interface_logo = 'logo/logo.png'
-  config.logo = 'logo/logo.png'
+  config.admin_interface_logo = '/assets/logo/logo.png'
+  config.logo = '/assets/logo/logo.png'
   config.currency="INR"
 
   # Example:
