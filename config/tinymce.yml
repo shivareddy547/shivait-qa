@@ -30,6 +30,10 @@ plugins:
   - visualchars
   - nonbreaking
   - template
+  - textcolor
+  - contextmenu colorpicker textpattern
+#  - print preview fullpage powerpaste searchreplace autolink directionality advcode visualblocks visualchars fullscreen image link media template codesample table charmap hr pagebreak nonbreaking anchor toc insertdatetime advlist lists textcolor wordcount tinymcespellchecker a11ychecker imagetools mediaembed  linkchecker contextmenu colorpicker textpattern help
+
 
 # Each line is a toolbar
 toolbar:
@@ -37,4 +41,9 @@ toolbar:
   - bold italic underline strikethrough | justifyleft justifycenter justifyright justifyfull | sub sup | bullist numlist | outdent indent blockquote"
   - styleselect formatselect fontselect fontsizeselect | forecolor backcolor
   - tablecontrols | hr removeformat visualaid
-  - fullscreen | charmap media | visualchars blockquote
+  - fullscreen | charmap media | visualchars blockquote | forecolor backcolor
+  - styles format font fontSize
+
+#toolbar1:
+#  - formatselect | bold italic strikethrough forecolor backcolor | link | alignleft aligncenter alignright alignjustify  | numlist bullist outdent indent  | removeformat
+image_advtab: true
