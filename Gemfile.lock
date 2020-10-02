@@ -1,4 +1,12 @@
 GIT
+  remote: https://github.com/shivareddy547/spree_admin_roles_and_access_4.2.git
+  revision: cd57c617468fb7bddad55c2304caabeeff68f465
+  specs:
+    spree_admin_roles_and_access (3.pre.0.pre.stable)
+      spree_auth_devise
+      spree_core (= 4.1)
+
+GIT
   remote: https://github.com/shivareddy547/spree_cloudinary.git
   revision: 3fe6a92f6b9c683c8c9ce5152b6930e10b6f2758
   branch: upgrade_ruby
@@ -27,6 +35,13 @@ GIT
     spree_mail_settings (4.1.0)
       spree_auth_devise (>= 4.1.0)
       spree_backend (>= 4.1.0)
+
+GIT
+  remote: https://github.com/shivareddy547/spree_scaffold_4.2.git
+  revision: ce74d8264f89d08f0b60d21ba5621c4ae8eec233
+  specs:
+    spree_scaffold (3.0.0)
+      spree_core (~> 4.1)
 
 GIT
   remote: https://github.com/shivareddy547/spree_social_products_4.2.git
@@ -61,19 +76,6 @@ GIT
       deface (~> 1.5)
       spree_core (>= 3.7.0, < 5.0)
       spree_extension
-
-PATH
-  remote: spree_admin_roles_and_access
-  specs:
-    spree_admin_roles_and_access (3.pre.0.pre.stable)
-      spree_auth_devise
-      spree_core (= 4.1)
-
-PATH
-  remote: spree_scaffold
-  specs:
-    spree_scaffold (3.0.0)
-      spree_core (~> 4.1)
 
 GEM
   remote: https://rubygems.org/
