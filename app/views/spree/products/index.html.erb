@@ -23,7 +23,7 @@
       <div class="row taxon_products">
         <% @products.each_with_index do |product,index| %>
 
-          <div id="product_<%= product.id %>" class="col-sm-4 col-6 mb-3 mb-md-4 pr-sm-0 pr-md-0 pl-md-4 pl-sm-4 <%= index&1 == 0 ? 'pl-0 pr-2' : 'pr-0 pl-2' %>">
+          <div id="product_<%= product.id %>" class="col-sm-4 col-6 mb-3 mb-md-4 pr-sm-0 pr-md-0 pl-md-4 pl-sm-4 <%= index&1 == 0 ? 'pl-0 pr-2' : 'pr-0 pl-2' %> taxon_product">
             <%= render 'spree/shared/product', product: product, image_class: 'product-component-plp-image' %>
           </div>
 <!--        <div id="product_<%#= each_p.id %>>" class="col-sm-4 col-6 mb-3 mb-md-4 pr-sm-0 pr-md-0 pl-md-4 pl-sm-4 pl-0 pr-2">-->
