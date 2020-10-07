@@ -3,7 +3,8 @@ Rails.application.routes.draw do
   get 'home/index'
   get 'home/about'
   get 'home/contact'
-
+  # mount LetsencryptPlugin::Engine, at: "/"  # It must be at root level
+  mount LetsEncrypt::Engine => '/.well-known'
   # get 'spree/request/requestenroll/:course_id/:user_id' => 'spree/request#requestenroll'
   match 'about_us', to: 'spree/home#about', via: [:get]
   match 'contact_us', to: 'spree/home#contact', via: [:get]

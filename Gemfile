@@ -95,3 +95,8 @@ gem 'spree_social_products', github: 'shivareddy547/spree_social_products_4.2'
 # gem 'spree_favorite_products', github: 'vinsol-spree-contrib/spree_favorite_products'
 #
 gem 'spree_analytics_trackers', github: 'spree-contrib/spree_analytics_trackers'
+
+# gem 'acme_plugin'
+#
+# gem 'letsencrypt_plugin'
+gem 'rails-letsencrypt'

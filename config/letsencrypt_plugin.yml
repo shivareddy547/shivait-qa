@@ -1,0 +1,15 @@
+default: &default
+  endpoint: "https://acme-v01.api.letsencrypt.org/"
+  email: "shiva.r547@gmail.com"
+  domain: "shivaita.in"
+  private_key: "key/keyfile.pem"                            # in Rails.root
+  output_cert_dir: "certificates"                           # in Rails.root
+
+production:
+  <<: *default
+
+development:
+  <<: *default
+
+test:
+  <<: *default
