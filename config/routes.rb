@@ -22,6 +22,10 @@ end
 Spree::Core::Engine.add_routes do
   # resources :requests
   match 'requestenroll', to: 'requests#requestenroll', via: [:get,:post]
+  # root controller: :rooms, action: :index
+
+  resources :room_messages
+  resources :rooms
   namespace :admin do
     resources :brands do
       collection do
@@ -35,5 +39,17 @@ Spree::Core::Engine.add_routes do
 
   namespace :admin do
     resources :requests
+  end
+end
+
+Spree::Core::Engine.add_routes do
+  namespace :admin do
+    resources :rooms
+  end
+end
+
+Spree::Core::Engine.add_routes do
+  namespace :admin do
+    resources :room_messages
   end
 end

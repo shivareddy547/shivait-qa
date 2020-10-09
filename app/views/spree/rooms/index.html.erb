@@ -1,0 +1,54 @@
+<% content_for :page_title do %>
+  <%= Spree.t(:listing_rooms) %>
+<% end %>
+
+<% content_for :page_actions do %>
+  <%= button_link_to Spree.t(:new_room), new_object_url, class: 'btn-success', icon: 'add', id: 'admin_new_room_link' %>
+<% end if can?(:create, Spree::Room) %>
+
+<table class="table" id="listing_rooms" data-hook>
+  <thead>
+    <tr data-hook="admin_rooms_index_headers">
+      <th><%= t(:name, scope: 'activerecord.attributes.spree/room') %></th>
+      <th data-hook="admin_rooms_index_header_actions" class="actions"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @rooms.each do |room| %>
+      <tr id="<%= spree_dom_id room %>" data-hook="admin_rooms_index_rows" class="<%= cycle('odd', 'even')%>">
+        <td><%= link_to room.name, edit_object_url(room) %></td>
+        <td data-hook="admin_rooms_index_row_actions" class="actions text-right">
+          <%= link_to_edit room, no_text: true %>
+          <%= link_to_delete room, no_text: true %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= paginate @rooms %>
+
+
+<div class="row">
+  <div class="col-12 col-md-3">
+    <%= render partial: 'rooms' %>
+  </div>
+
+  <div class="col">
+    <div class="alert alert-primary">
+      <h4 class="alert-heading">
+        Welcome to the RailsChatTutorial!
+      </h4>
+
+      <p>
+        We need to talk.
+      </p>
+
+      <hr />
+
+      <p>
+        You can create or join a room from the sidebar.
+      </p>
+    </div>
+  </div>
+</div>

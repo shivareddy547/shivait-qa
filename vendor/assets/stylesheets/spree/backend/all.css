@@ -13,3 +13,11 @@
  *= require spree/backend/spree_editor
  *= require spree/backend/spree_social_products
 */
+
+
+.msg-send{
+    background: #2ecc71 !important;
+}
+.msg-receive{
+    background: #3498db !important;
+}

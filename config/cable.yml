@@ -1,10 +1,12 @@
 development:
-  adapter: async
+  adapter: redis
+  url: <%= ENV.fetch("REDIS_URL") { "redis://localhost:6379/1" } %>
+  channel_prefix: rails-chat-tutorial_development
 
 test:
-  adapter: test
+  adapter: async
 
 production:
   adapter: redis
-  url: <%= ENV.fetch("REDIS_URL") { "redis://localhost:6379/1" } %>
-  channel_prefix: shivait_production
+  url: <%= ENV.fetch("REDIS_URL") { "redis://h:p11657d6ff55e19fbea23a868da00bdbff15045c915e96134db9ff0e9f0a843de@ec2-34-228-121-196.compute-1.amazonaws.com:15929" } %>
+  channel_prefix: rails-chat-tutorial_production

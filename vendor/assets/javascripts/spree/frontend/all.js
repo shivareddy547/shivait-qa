@@ -28,7 +28,8 @@
 //= require spree/frontend/new_design/jquery.ajaxchimp.min
 //= require spree/frontend/new_design/plugins
 //= require spree/frontend/new_design/main
-
+//= require spree/frontend/cable
+//= require spree/frontend/room
 
 //= require popper
 
@@ -81,3 +82,7 @@ Spree.routes.product_carousel = function (taxonId) { return Spree.pathFor('produ
 
 //= require spree/frontend/spree_social_products
 //= require spree/frontend/add_to_cart_analytics
+
+
+
+
