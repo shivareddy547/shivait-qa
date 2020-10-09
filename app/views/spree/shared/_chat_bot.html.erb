@@ -9,11 +9,11 @@
 <% @room_message = Spree::RoomMessage.new room: @room %>
 <% @room_messages = @room.room_messages.includes(:user) %>
 <%#= @room_messages.inspect  %>
-<%= sent_user_id = @room_messages.first.user_id  rescue ""  %>
+<% sent_user_id = @room_messages.first.user_id  rescue ""  %>
 
 
 
-<%= params.inspect %>
+
 <div class="d-none" data-role="message-template">
   <div class="chat-message-container">
     <div class="row no-gutters">

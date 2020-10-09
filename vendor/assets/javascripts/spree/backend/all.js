@@ -7,6 +7,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require spree/backend
+//= require spree/backend/channels/cable
+//= require spree/backend/channels/room
 
 //= require_tree .
 //= require spree/backend/spree_cloudinary
