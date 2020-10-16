@@ -8,6 +8,10 @@ Rails.application.routes.draw do
   match 'about_us', to: 'spree/home#about', via: [:get]
   match 'contact_us', to: 'spree/home#contact', via: [:get]
 
+  match 'update_read_message', to: 'spree/home#update_read_message', via: [:post]
+
+  match 'update_read_message_admin_room', to: 'spree/home#update_read_message_admin_room', via: [:post]
+
   # match 'requestenroll', to: 'spree/requests#requestenroll', via: [:get,:post]
   # match 'requestenroll', to: 'spree/request#requestenroll', via: [:get,:post]
   # This line mounts Spree's routes at the root of your application.

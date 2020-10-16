@@ -27,6 +27,8 @@ module Spree
       image_tag placeholder, data: { src: src, srcset: srcset }, class: "#{options[:class]} lazyload", alt: alt
     end
 
+
+
   end
 end
 ::Spree::FrontendHelper.prepend(Spree::FrontendHelperDecorator)

@@ -6,11 +6,18 @@
 
 <% @user =  Spree::User.find_by_email(cookies.permanent.signed[:email]) %>
 <% @room = Spree::Room.find_by_name(cookies.permanent.signed[:email]) %>
-<% @room_message = Spree::RoomMessage.new room: @room %>
+
+<%# @room_message = Spree::RoomMessage.create!(room: @room,message:"Hello! Welcome to ShivaITA. How may I assist you? ",:user=>Spree::User.find_by_email("spree@example.com"))  %>
+
 <% @room_messages = @room.room_messages.includes(:user) %>
+
+<% if @room_messages.count == 0 %>
+  <% Spree::RoomMessage.create!(room: @room,message:"Hello! Welcome to ShivaITA. How may I assist you? ",:user=>Spree::User.find_by_email("spree@example.com")) %>
+<% end %>
+
+
 <%#= @room_messages.inspect  %>
 <% sent_user_id = @room_messages.first.user_id  rescue ""  %>
-
 
 
 
@@ -38,16 +45,17 @@
 </div>
 
 
-
-
 <div id="body">
-  <div id="chat-circle" class="btn btn-raised">
+  <div id="chat-circle" class="btn btn-raised" data-role="message-count-template">
     <div id="chat-overlay"></div>
-    <i class="material-icons">speaker_phone</i>
+<!--    <span class="need_help_text">Need help?</span>-->
+    <i class="material-icons">commenting-o</i>
+    <div class="unread_message_count" data-role="chat-count"><%= Spree::RoomMessage.unread_by(@user).count > 0 ? Spree::RoomMessage.unread_by(@user).count  : ""  %></div>
+    <% @room_message = Spree::RoomMessage.new room: @room %>
   </div>
   <div class="chat-box">
     <div class="chat-box-header">
-      ChatBot
+      Chat Us!
       <span class="chat-box-toggle"><i class="material-icons">close</i></span>
     </div>
     <div class="chat-box-body">
@@ -79,55 +87,33 @@
               </div>
             </div>
           <% end %>
-
-
-
         </div>
-
-
-
       </div>
     </div>
     <div class="chat-input">
 
-
       <%= simple_form_for @room_message, remote: true do |form| %>
-<!--        <div class="input-group mb-3 chat-input-div">-->
           <%= form.input :message, as: :string,:placeholder=>"Please type....",
                          wrapper: false,
                          label: false,
+                         required: true,
                          input_html: {
                              class: 'chat-input',
                              autocomplete: 'off',
                              id: 'chat-input'
-                         } %>
 
+                         } %>
         <%= form.input :room_id, as: :hidden %>
         <div class="input-group-append">
           <%= button_tag :submit,:class=>"chat-submit" do %>
             <i class="material-icons">send</i>
           <% end %>
-          <%#= form.submit do  %>
-<!--            <i class="fa fa-send">Send</i>-->
-          <%# end %>
-            <%#= form.submit "Send", class: 'btn btn-primary chat-input ' %>
-<!--            <button type="submit" class="chat-submit" id="chat-submit"><i class="material-icons">send</i></button>-->
-          </div>
-<!--        </div>-->
-
-
       <% end %>
 
-<!--      <form>-->
-<!--        <input type="text" id="chat-input" placeholder="Send a message..."/>-->
-<!--        <button type="submit" class="chat-submit" id="chat-submit"><i class="material-icons">send</i></button>-->
-<!--      </form>-->
     </div>
   </div>
 
 </div>
-
-
 
 
 
@@ -372,6 +358,8 @@
 <script>
     $(function() {
 
+
+
         $(document).delegate(".chat-btn", "click", function() {
             var value = $(this).attr("chat-value");
             var name = $(this).html();
@@ -380,15 +368,28 @@
         })
 
         $("#chat-circle").click(function() {
+            $.post("/update_read_message",
+                {
+                    authenticity_token: $('[name="csrf-token"]')[0].content,
+                    user_id: "<%= @user.id %>"
+                },
+                function(data, status){
+                    $(".unread_message_count").text("");
+                });
+
             $("#chat-circle").toggle('scale');
             $(".chat-box").toggle('scale');
-        })
+            $(".chat.chat-body").animate({scrollTop:   $(".chat.chat-body").prop("scrollHeight")}, 400);
+        });
 
         $(".chat-box-toggle").click(function() {
             $("#chat-circle").toggle('scale');
             $(".chat-box").toggle('scale');
-        })
+        });
+
 
     })
 </script>
 
+
+</div>

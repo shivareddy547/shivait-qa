@@ -9,6 +9,7 @@ module Spree
       before_action :load_entities
 
       def create
+
         if cookies.signed[:email].present?
           @user = Spree::User.find_by_email(cookies.permanent.signed[:email])
           if !params[:room_message][:room_id].present?
@@ -19,6 +20,11 @@ module Spree
           @room_message = Spree::RoomMessage.create user: @user,
                                              room: @room,
                                              message: params.dig(:room_message, :message)
+
+
+          Spree::RoomMessage.unread_by(@user).each do |msg|
+            msg.mark_as_read! for: @user
+          end
         end
 
         RoomChannel.broadcast_to @room, @room_message

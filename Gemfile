@@ -98,3 +98,5 @@ gem 'spree_analytics_trackers', github: 'spree-contrib/spree_analytics_trackers'
 
 gem 'simple_form'
 gem 'redis'
+
+gem 'unread'

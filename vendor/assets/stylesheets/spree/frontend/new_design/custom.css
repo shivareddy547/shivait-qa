@@ -83,5 +83,15 @@ p.homepage-carousel-text a.list-group-item{
     margin-top: 6%;
 }
 
-
-
+.unread_message_count{
+    color: red;
+    font-size: 25px;
+    /* margin-top: -16px; */
+    margin-left: 26px;
+}
+.chat_start .chat-message-container{
+    padding-right: 10px;
+}
+.chat_start .chat-message-container p.mb-1 {
+    padding: 10px;
+}

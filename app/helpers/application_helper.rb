@@ -8,8 +8,7 @@ require 'spree/addresses_helper'
   end
 
 def get_request_status(product)
-  p 111111111111111111111
-  p product
+
   return spree_current_user.requests.present? && spree_current_user.requests.present? ? spree_current_user.requests.where(:product_id=>product.id) : ""
 end
 
@@ -19,5 +18,19 @@ def user_available_addresses
   return unless try_spree_current_user
 
   try_spree_current_user.addresses.where(country: available_countries)
+end
+
+
+def get_admin_unread_count(room)
+  @count=0
+  admin_user = Spree::User.find_by_email("spree@example.com")
+  room.room_messages.each do |me|
+
+    if !admin_user.have_read?(me)
+      @count+=1
+    end
+
+  end
+  @count
 end
 end

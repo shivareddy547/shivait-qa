@@ -16,7 +16,7 @@
   <tbody>
     <% @rooms.each do |room| %>
       <tr id="<%= spree_dom_id room %>" data-hook="admin_rooms_index_rows" class="<%= cycle('odd', 'even')%>">
-        <td><%= link_to room.name, edit_object_url(room) %></td>
+        <td><%= link_to "#{room.name} ( #{get_admin_unread_count(room) } ) ", admin_room_path(room) %></td>
         <td data-hook="admin_rooms_index_row_actions" class="actions text-right">
           <%= link_to_edit room, no_text: true %>
           <%= link_to_delete room, no_text: true %>
@@ -26,29 +26,29 @@
   </tbody>
 </table>
 
-<%= paginate @rooms %>
+<%#= paginate @rooms %>
 
 
-<div class="row">
-  <div class="col-12 col-md-3">
-    <%= render partial: 'rooms' %>
-  </div>
+<!--<div class="row">-->
+<!--  <div class="col-12 col-md-3">-->
+    <%#= render partial: 'rooms' %>
+<!--  </div>-->
 
-  <div class="col">
-    <div class="alert alert-primary">
-      <h4 class="alert-heading">
-        Welcome to the RailsChatTutorial!
-      </h4>
+<!--  <div class="col">-->
+<!--    <div class="alert alert-primary">-->
+<!--      <h4 class="alert-heading">-->
+<!--        Welcome to the RailsChatTutorial!-->
+<!--      </h4>-->
 
-      <p>
-        We need to talk.
-      </p>
+<!--      <p>-->
+<!--        We need to talk.-->
+<!--      </p>-->
 
-      <hr />
+<!--      <hr />-->
 
-      <p>
-        You can create or join a room from the sidebar.
-      </p>
-    </div>
-  </div>
-</div>
+<!--      <p>-->
+<!--        You can create or join a room from the sidebar.-->
+<!--      </p>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->

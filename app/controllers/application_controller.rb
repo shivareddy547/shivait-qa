@@ -49,6 +49,9 @@ class ApplicationController < ActionController::Base
 
 
   def set_cookies
+
+    if !spree_current_user.present?
+
     if !cookies.signed[:email].present?
       create_chat_cookies
     else
@@ -60,6 +63,33 @@ class ApplicationController < ActionController::Base
       else
         cookies.delete :email
         create_chat_cookies
+      end
+
+    end
+
+    else
+      if !cookies.signed[:email].present?
+        cookies.permanent.signed[:email]   = spree_current_user.email
+
+        # u.username=cookies.permanent.signed[:email]
+        r = Spree::Room.find_or_initialize_by(:name=>cookies.permanent.signed[:email])
+        r.save
+      else
+        cookies.permanent.signed[:email]   = spree_current_user.email
+        # cookies.permanent.signed[:email]
+        # find_r = Spree::Room.find_by_name(cookies.permanent.signed[:email])
+        find_r = Spree::Room.find_or_create_by(:name=>cookies.permanent.signed[:email])
+        if find_r.present?
+
+        else
+          cookies.delete :email
+          cookies.permanent.signed[:email]   = spree_current_user.email
+
+          # u.username=cookies.permanent.signed[:email]
+          r = Spree::Room.find_or_initialize_by(:name=>cookies.permanent.signed[:email])
+          r.save
+        end
+
       end
 
     end

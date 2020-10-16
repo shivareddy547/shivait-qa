@@ -2,6 +2,7 @@ module Spree
   class HomeController < Spree::StoreController
     respond_to :html
     include Spree::FrontendHelper
+
     def index
 
       # fresh_when etag: store_etag, last_modified: store_last_modified, public: true
@@ -37,5 +38,18 @@ module Spree
 
     end
 
+    def update_read_message
+      @user = Spree::User.find(params[:user_id])
+      Spree::RoomMessage.unread_by(@user).each do |msg|
+        msg.mark_as_read! for: @user
+      end
+    end
+    def update_read_message_admin_room
+      @user = Spree::User.find(params[:user_id])
+      @room = Spree::Room.find(params[:room_id])
+      @room.room_messages.each do |msg|
+        msg.mark_as_read! for: @user
+      end
+    end
   end
 end
