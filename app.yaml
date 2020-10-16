@@ -1,0 +1,23 @@
+# How to start your application
+entrypoint: bundle exec rackup --port $PORT
+# Use App Engine flexible environment
+env: flex
+# Use the supported Ruby runtime 
+runtime: ruby
+
+# App Engine flexible environment will load the configuration
+# values from the Runtime Configuration Service defined by 
+# flex-env-config and create a .env file used by your
+# application to determine environment values.
+runtime_config:
+  dotenv_config: flex-env-config
+# env_variables:
+  # SECRET_KEY_BASE: ef8948865225bac0cb028e6ee96d2e890113426b3b42ee6984a8960597787236a62862d98a0f692979edbe19821d6ccea30bf7fc30c35ea63a11b365824ee482
+
+# App Engine flexible environment will start a Cloud SQL Proxy
+# to connect your database instance using the Instance Connection
+# Name.
+beta_settings:
+  cloud_sql_instances: mycmsproject-292216:us-central1:shivait-cloudsql-instance
+manual_scaling: 
+  instances: 1
