@@ -7,7 +7,7 @@ ruby '2.7.1'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.2'
 # Use sqlite3 as the database for Active Record
 # gem 'sqlite3', '~> 1.4'
-gem 'pg'
+# gem 'pg'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
@@ -58,7 +58,7 @@ gem 'spree', '~> 4.1'
 gem 'spree_auth_devise', '~> 4.1'
 gem 'spree_gateway', '~> 3.7'
 # gem 'spree_cloudinary', :path=>"spree_cloudinary"
-gem 'spree_cloudinary', github: 'shivareddy547/spree_cloudinary',branch: 'upgrade_ruby'
+gem 'spree_cloudinary', github: 'shivareddy547/spree_cloudinary_4.2'
 # gem "spree_scaffold", :git => 'git://github.com/sebastyuiop/spree_scaffold.git'
 # gem 'vinsol_spree_themes', github: 'vinsol-spree-contrib/spree_themes', branch: 'master'
 #
@@ -81,7 +81,7 @@ gem "mini_magick"
 # gem 'spree_editor', github: 'spree-contrib/spree_editor'
 gem 'coffee-script'
 # gem "mini_magick"
-gem 'spree_static_content', github: 'spree-contrib/spree_static_content'
+gem 'spree_static_content', github: 'shivareddy547/spree_static_content_4.2'
 
 gem 'spree_editor', github: 'shivareddy547/spree_editor'
 
@@ -98,3 +98,8 @@ gem 'spree_analytics_trackers', github: 'spree-contrib/spree_analytics_trackers'
 
 gem 'simple_form'
 gem 'redis'
+gem "pg", "~> 1.2"
+
+gem "appengine", "~> 0.5.0"
+
+gem "dotenv-rails", "~> 2.7"
