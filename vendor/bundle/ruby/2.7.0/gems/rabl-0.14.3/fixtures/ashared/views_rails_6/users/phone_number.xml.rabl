@@ -1,1 +1,0 @@
-fixtures/ashared/views_rails_6/users/phone_number.json.rabl

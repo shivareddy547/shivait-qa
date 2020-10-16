@@ -5,15 +5,21 @@ development:
   api_secret: MKx_1N97Lctgwnc0MwxFs_597BE
   enhance_image_tag: true
   static_file_support: false
+  secure: true
+  cdn_subdomain: true
 production:
   cloud_name: lovecart
   api_key: '429837329638351'
   api_secret: MKx_1N97Lctgwnc0MwxFs_597BE
   enhance_image_tag: true
   static_file_support: true
+  secure: true
+  cdn_subdomain: true
 test:
   cloud_name: lovecart
   api_key: '429837329638351'
   api_secret: MKx_1N97Lctgwnc0MwxFs_597BE
   enhance_image_tag: true
   static_file_support: false
+  secure: true
+  cdn_subdomain: true
